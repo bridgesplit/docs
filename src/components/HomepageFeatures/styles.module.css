@@ -1,0 +1,28 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.cardIconRow {
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--ifm-card-vertical-spacing);
+}
+
+
+.caption {
+  color: var(--text-caption-color)
+}
+
+a.linkedCard:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,4 @@
+.outlinedCard {
+  background-color: transparent !important;
+  border: 1px solid var(--divider-color);
+}

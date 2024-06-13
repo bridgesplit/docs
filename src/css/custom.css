@@ -1,0 +1,179 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --primary-color: rgba(255, 255, 255, 0.95);
+  --primary-background-color: rgba(255, 255, 255, 0.1);
+  --primary-background-color-light: rgba(255, 255, 255, 0.05);
+  --secondary-color: #7C5BFF;
+  --text-body-color: rgba(255, 255, 255, 0.95);
+  --text-caption-color: rgba(255, 255, 255, 0.60);
+  --text-disabled-color: rgba(255, 255, 255, 0.40);
+  --text-button-primary-color: rgba(21, 13, 53, 0.95);
+  --background-color: #131221;
+  --background-card-color: rgba(255, 255, 255, 0.05);
+  --divider-color: rgba(255, 255, 255, 0.05);
+  --divider-color-dark: rgba(255, 255, 255, 0.20);
+  --border-radius: 5px;
+  --body1-font-size: 16px;
+  --body2-font-size: 14px;
+  --caption-font-size: 12px;
+  --h1-font-size: 32px;
+  --h2-font-size: 24px;
+  --h3-font-size: 20px;
+  --h4-font-size: 16px;
+  --font-family: "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  --heading-font-wt: 500;
+  --padding: 20px;
+  --max-width: 1000px;
+  --navbar-height: 70px;
+
+  --ifm-navbar-height: var(--navbar-height);
+  --ifm-color-primary: var(--primary-color);
+  --ifm-font-size-base: var(--body1-font-size);
+  --ifm-font-family-base: var(--font-family);
+  --ifm-global-radius: var(--border-radius);
+  --ifm-background-color: var(--background-color);
+  --ifm-background-surface-color: var(--background-card-color);
+  --ifm-button-background-color: var(--primary-color);
+  --ifm-footer-background-color: var(--background-color);
+  --ifm-color-content: var(--text-body-color);
+  --ifm-toc-border-color: var(--divider-color-dark);
+  --ifm-font-weight-bold: var(--heading-font-wt);
+  --ifm-h1-font-size: var(--h1-font-size);
+  --ifm-h2-font-size: var(--h2-font-size);
+  --ifm-h3-font-size: var(--h3-font-size);
+  --ifm-h4-font-size: var(--h4-font-size);
+  --ifm-heading-color: var(--text-body-color);
+  --ifm-card-horizontal-spacing: var(--padding);
+  --ifm-card-vertical-spacing: var(--padding);
+  --ifm-card-border-radius: var(--border-radius);
+  --ifm-container-width-xl: var(--max-width);
+  --ifm-container-width: var(--max-width);
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-button-border-color: var(--divider-color);
+  --ifm-hr-background-color: var(--divider-color-dark);
+  --ifm-menu-color: var(--text-caption-color);
+  --ifm-menu-link-sublist-icon: url("data:image/svg+xml;utf8,<svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8.00191 6.56279L5.67938 8.88533C5.60038 8.96432 5.5069 9.00251 5.39894 8.99987C5.29097 8.99724 5.19749 8.95642 5.1185 8.87743C5.0395 8.79843 5 8.70495 5 8.59698C5 8.48902 5.0395 8.39554 5.1185 8.31654L7.55162 5.89131C7.61482 5.82812 7.68592 5.78072 7.76492 5.74912C7.84392 5.71752 7.92291 5.70172 8.00191 5.70172C8.08091 5.70172 8.15991 5.71752 8.2389 5.74912C8.3179 5.78072 8.389 5.82812 8.4522 5.89131L10.8853 8.32444C10.9643 8.40344 11.0025 8.4956 10.9999 8.60093C10.9972 8.70626 10.9564 8.79843 10.8774 8.87743C10.7984 8.95642 10.7049 8.99592 10.597 8.99592C10.489 8.99592 10.3955 8.95642 10.3165 8.87743L8.00191 6.56279Z\" fill=\"white\" fill-opacity=\"0.6\"/></svg>");
+  --ifm-breadcrumb-separator: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -800 800 800\" fill=\"white\" opacity=\"0.6\"><path d=\"M593.23-480 291.92-781.31q-11.92-11.92-11.61-28.38.31-16.46 12.23-28.39Q304.46-850 320.92-850t28.39 11.92l306.23 306.85q10.84 10.85 16.07 24.31 5.24 13.46 5.24 26.92t-5.24 26.92q-5.23 13.46-16.07 24.31L348.69-121.92q-11.92 11.92-28.07 11.61-16.16-.31-28.08-12.23-11.92-11.92-11.92-28.38t11.92-28.39L593.23-480Z\"/></svg>");
+}
+
+
+.footer--dark {
+  --ifm-footer-background-color: var(--background-card-color);
+
+}
+
+.navbar__logo {
+  height: 1.5rem;
+}
+
+
+.card {
+  border: 1px solid var(--divider-color);
+}
+
+a>.card:hover {
+  border: 1px solid var(--divider-color-dark)
+}
+
+.tb_col--200px {
+  width: 200px;
+}
+
+.markdown h1:first-child {
+  --ifm-h1-font-size: var(--h1-font-size);
+}
+
+.markdown h2 {
+  --ifm-h2-font-size: var(--h2-font-size);
+}
+
+.markdown h3 {
+  --ifm-h3-font-size: var(--h3-font-size);
+}
+
+.markdown h4 {
+  --ifm-h4-font-size: var(--h4-font-size);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--divider-color-dark);
+}
+
+.menu {
+  padding: 1.5rem 1rem !important;
+}
+
+/* 
+  --ifm-container-width
+--ifm-global-border-width
+--ifm-global-radius
+--ifm-global-spacing
+--ifm-leading
+--ifm-leading-desktop
+--ifm-pre-line-height
+--ifm-pre-padding
+--ifm-spacing-horizontal
+--ifm-transition-fast
+--ifm-transition-timing-default
+--ifm-z-index-fixed
+
+--ifm-color-black
+--ifm-color-white
+
+--ifm-color-primary
+--ifm-color-primary-dark
+--ifm-color-primary-darker
+--ifm-color-primary-darkest
+--ifm-color-primary-light
+--ifm-color-primary-lighter
+--ifm-color-primary-lightest
+--ifm-color-secondary
+--ifm-color-secondary-darkest
+--ifm-color-secondary-lighter */
+
+
+
+/* --ifm-color-emphasis-100
+--ifm-color-emphasis-200
+--ifm-color-emphasis-400
+--ifm-color-emphasis-600
+--ifm-color-emphasis-900
+
+--ifm-toc-link-color
+
+--ifm-font-size-base
+--ifm-font-weight-bold
+--ifm-h2-font-size
+--ifm-h3-font-size
+--ifm-code-font-size
+
+--ifm-navbar-padding-horizontal */
+/* --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); */
+
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
