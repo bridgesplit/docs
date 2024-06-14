@@ -12,6 +12,7 @@ type FeatureItem = {
   Icon: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
   slug: string;
+  disabled: boolean;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -23,7 +24,8 @@ const FeatureList: FeatureItem[] = [
         Learn about the core concepts of the Bridgesplit Protocol, Omni, the Creditbook, and more.
       </>
     ),
-    slug: "/docs/concepts/overview"
+    slug: "/docs/concepts/overview",
+    disabled: false
   },
   {
     title: 'User Guides',
@@ -33,7 +35,8 @@ const FeatureList: FeatureItem[] = [
         Learn how to get started borrowing and lending on Bridgesplit with easy-to-follow user guides.
       </>
     ),
-    slug: "/docs/user-guides"
+    slug: "/docs/user-guides",
+    disabled: false
 
   },
   {
@@ -44,21 +47,25 @@ const FeatureList: FeatureItem[] = [
         Learn about the artchitecture of the Bridgesplit Protocol smart contracts through guided examples.
       </>
     ),
-    slug: "/docs/protocol"
+    slug: "/docs/protocol",
+    disabled: true
 
   },
 ];
+function ComingSoonTag() {
+  return <div className={clsx(styles.tag)}><p>Coming Soon</p></div>
+}
 
-function Feature({ title, Icon, description, slug }: FeatureItem) {
+function Feature({ title, Icon, description, slug, disabled }: FeatureItem) {
   return (
     <div className={clsx('col col--4 ')}>
       <a target="_self" href={slug} className={clsx(styles.linkedCard)}>
 
-        <div className={clsx('card')}>
+        <div className={clsx('card', disabled ? 'disabled' : '')}>
           <div className={clsx('card__body')}>
             <div className={clsx(styles.cardIconRow)}>
               <Icon role="img" />
-              <OutwardArrowIcon className={clsx(styles.caption)} role="img" />
+              {disabled ? <ComingSoonTag /> : <OutwardArrowIcon className={clsx(styles.caption)} role="img" />}
             </div>
             <h3>{title}</h3>
             <p>

@@ -82,6 +82,16 @@ a>.card:hover {
   border: 1px solid var(--divider-color-dark)
 }
 
+a>.card.disabled:hover {
+  border: 1px solid var(--divider-color);
+
+}
+
+a>.card.disabled,
+a>.card.disabled h3 {
+  color: var(--text-disabled-color) !important;
+}
+
 .tb_col--200px {
   width: 200px;
 }

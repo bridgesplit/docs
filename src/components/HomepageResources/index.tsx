@@ -42,6 +42,7 @@ const ResourceList: Resource[] = [
     }
 ]
 
+
 function Resource({ title, Image, slug, description }: Resource) {
     return (
         <div className={clsx('col col--6 ')}>

@@ -42,7 +42,7 @@ const config: Config = {
       title: 'Bridgesplit Docs',
       logo: {
         alt: 'Bridgesplit',
-        src: 'img/logo.svg',
+        src: 'img/docs_logo.svg',
       },
       items: [
         {
