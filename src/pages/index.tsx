@@ -10,9 +10,8 @@ import HomepageResources from '@site/src/components/HomepageResources';
 
 function HomepageHeader() {
   return (
-
     <header className={clsx(styles.heroBanner)}>
-      <div className="container">
+      <div className={clsx("container")}>
         <Heading as="h1">
           Bridgesplit Docs
         </Heading>
@@ -29,14 +28,17 @@ export default function Home(): JSX.Element {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <div className={clsx(styles.homeContainer)}>
-        <HomepageHeader />
-        <main>
+      <main>
+        <div className={clsx(styles.homeContainer)}>
+
+          <HomepageHeader />
+
+
           <HomepageFeatures />
-          <hr />
-          <HomepageResources />
-        </main>
-      </div>
-    </Layout>
+        </div>
+        <hr />
+        <HomepageResources />
+      </main>
+    </Layout >
   );
 }

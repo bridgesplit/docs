@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Bridgesplit Docs',
-  tagline: 'Resources on the Bridgesplit Protocol, Omni, and more',
+  tagline: 'Resources on the Bridgesplit Protocol, Markets, and more',
   favicon: 'img/favicon.ico',
   url: 'https://docs.bridgesplit.com',
   baseUrl: '/',
@@ -51,18 +51,18 @@ const config: Config = {
           position: 'left',
           label: 'Concepts',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'userGuides',
-          position: 'left',
-          label: 'Guides',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'protocol',
-          position: 'left',
-          label: 'Protocol',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'userGuides',
+        //   position: 'left',
+        //   label: 'Guides',
+        // },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'protocol',
+        //   position: 'left',
+        //   label: 'Protocol',
+        // },
         {
           href: 'https://github.com/bridgesplit',
           label: 'GitHub',
@@ -89,14 +89,14 @@ const config: Config = {
               label: 'Concepts',
               to: 'concepts/'
             },
-            {
-              label: 'Guides',
-              to: 'guides/',
-            },
-            {
-              label: 'Protocol',
-              to: 'protocol/'
-            },
+            // {
+            //   label: 'Guides',
+            //   to: 'guides/',
+            // },
+            // {
+            //   label: 'Protocol',
+            //   to: 'protocol/'
+            // },
           ],
         },
         {

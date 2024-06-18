@@ -22,20 +22,20 @@ const ResourceList: Resource[] = [
     },
     {
         title: "Analytics",
-        description: <>Explore protocol usage and metrics.</>,
+        description: <>Explore protocol metrics.</>,
         Image: AnalyticsIcon,
         slug: "https://dashboards.bridgesplit.com",
     },
     {
-        title: "Bridgesplit Omni",
-        description: <>Borrow and lend on Bridgesplit's interface.</>,
+        title: "Markets",
+        description: <>Borrow and lend fixed-rate</>,
         Image: AppLogo,
         slug: "https://app.bridgesplit.com"
 
     },
     {
         title: "Feedback",
-        description: <>Submit feature requests and issues.</>,
+        description: <>Submit requests and issues</>,
         Image: FeedbackIcon,
         slug: "https://bridgesplit.canny.io"
 
@@ -45,20 +45,35 @@ const ResourceList: Resource[] = [
 
 function Resource({ title, Image, slug, description }: Resource) {
     return (
-        <div className={clsx('col col--6 ')}>
+        <div className={clsx('col col--3 ')}>
             <a target="_blank" href={slug} className={clsx(styles.linkedCard)}>
-
                 <div className={clsx('card', styles.outlinedCard)}>
                     <div className={clsx('card__body')}>
                         <div className={clsx(styles.resourceCardContent)}>
                             <Image className={styles.resourceCardIcon} role="img" />
                             <div>
                                 <h3>{title}</h3>
-                                <p>
-                                    {description}
-                                </p>
+
                             </div>
                         </div>
+                    </div>
+                </div >
+            </a>
+        </div >
+    );
+}
+
+function Resource1({ title, Image, slug, description }: Resource) {
+    return (
+        <div className={clsx('col col--3 ')}>
+            <a target="_blank" href={slug} className={clsx(styles.linkedCard)}>
+                <div className={clsx(styles.resourceCardContent)}>
+                    <Image className={styles.resourceCardIcon} role="img" />
+                    <div>
+                        <h3>{title}</h3>
+                        {/* <p>
+                            {description}
+                        </p> */}
                     </div>
                 </div >
             </a>
@@ -70,15 +85,8 @@ export default function HomepageResources(): JSX.Element {
     return (
         <section>
             <div className={clsx("container", styles.resourcesContainer)}>
-
                 <div className="row">
-                    {ResourceList.slice(0, 2).map((props, idx) => (
-                        <Resource key={idx} {...props} />
-                    ))}
-                </div>
-
-                <div className="row">
-                    {ResourceList.slice(2, 4).map((props, idx) => (
+                    {ResourceList.map((props, idx) => (
                         <Resource key={idx} {...props} />
                     ))}
                 </div>

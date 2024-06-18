@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
     Icon: InfoIcon,
     description: (
       <>
-        Learn about the core concepts of the Bridgesplit Protocol, Omni, the Creditbook, and more.
+        Learn about the core concepts of the Bridgesplit Protocol, Bridgesplit Markets, the Creditbook, and more.
       </>
     ),
     slug: "/docs/concepts/overview",
@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
     slug: "/docs/user-guides",
-    disabled: false
+    disabled: true
 
   },
   {

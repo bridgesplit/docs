@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 # Asset Parameters
-Borrowers and lenders on Omni interact via virtualized Limit Creditbooks with standardized terms including principal and collateral options, principal and collateral oracles, and loan terms. These standardized terms are available below. More information on terms and how they affect a loan is available in [Protocol Concepts](concepts/protocol-concepts/bilateral-loans#terms).
+Borrowers and lenders on Bridgesplit Markets interact via virtualized Limit Creditbooks with standardized terms including principal and collateral options, principal and collateral oracles, and loan terms. These standardized terms are available below. More information on terms and how they affect a loan is available in [Protocol Concepts](concepts/protocol-concepts/bilateral-loans#terms).
 ## Loan Terms
 - **Loan Type**: Zero-Coupon (single payment at maturity)
 - **Default Type**: Price-based and/or payment-based (lender-specified)
@@ -16,7 +16,7 @@ Borrowers and lenders on Omni interact via virtualized Limit Creditbooks with st
 To compensate lenders for an unused portion of a loan duration, borrowers are partial interest on any early repaid principal, expressed as a percentage of the original interest expected for the repaid principal.
 **Early Repayment Penalty**: 5% of forgone interest
  ## Principal
- The following assets are eligible to be used as principal on Omni's vLCBs.
+ The following assets are eligible to be used as principal on Bridgesplit Markets's vLCBs.
  | Asset | Oracle |
  |:--|:--|
  |USDC ([Mint](https://solscan.io/token/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v)) | Gnt27xtC473ZT2Mw5u8wZ68Z3gULkSTb5DuxJy7eJotD |

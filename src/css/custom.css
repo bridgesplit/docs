@@ -30,7 +30,7 @@
     Helvetica, Arial, "Lucida Grande", sans-serif;
   --heading-font-wt: 500;
   --padding: 20px;
-  --max-width: 1000px;
+  --max-width: 1100px;
   --navbar-height: 70px;
 
   --ifm-navbar-height: var(--navbar-height);
@@ -63,6 +63,11 @@
   --ifm-breadcrumb-separator: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -800 800 800\" fill=\"white\" opacity=\"0.6\"><path d=\"M593.23-480 291.92-781.31q-11.92-11.92-11.61-28.38.31-16.46 12.23-28.39Q304.46-850 320.92-850t28.39 11.92l306.23 306.85q10.84 10.85 16.07 24.31 5.24 13.46 5.24 26.92t-5.24 26.92q-5.23 13.46-16.07 24.31L348.69-121.92q-11.92 11.92-28.07 11.61-16.16-.31-28.08-12.23-11.92-11.92-11.92-28.38t11.92-28.39L593.23-480Z\"/></svg>");
 }
 
+.footer__title {
+  font-weight: var(--heading-font-wt);
+  color: var(--text-caption-color);
+
+}
 
 .footer--dark {
   --ifm-footer-background-color: var(--background-card-color);
@@ -84,12 +89,20 @@ a>.card:hover {
 
 a>.card.disabled:hover {
   border: 1px solid var(--divider-color);
+  pointer-events: none !important;
 
+}
+
+a>.card.disabled {
+  pointer-events: none !important;
+  cursor: default !important;
 }
 
 a>.card.disabled,
 a>.card.disabled h3 {
   color: var(--text-disabled-color) !important;
+
+
 }
 
 .tb_col--200px {
