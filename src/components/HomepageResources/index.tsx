@@ -16,26 +16,26 @@ type Resource = {
 const ResourceList: Resource[] = [
     {
         title: "Discord",
-        description: <>Join our community.</>,
+        description: <>Join community</>,
         Image: DiscordLogo,
         slug: "https://discord.com/invite/A9xnqqzACF"
     },
     {
         title: "Analytics",
-        description: <>Explore protocol metrics.</>,
+        description: <>Explore metrics</>,
         Image: AnalyticsIcon,
         slug: "https://dashboards.bridgesplit.com",
     },
     {
         title: "Markets",
-        description: <>Borrow and lend fixed-rate</>,
+        description: <>Borrow and lend </>,
         Image: AppLogo,
         slug: "https://app.bridgesplit.com"
 
     },
     {
         title: "Feedback",
-        description: <>Submit requests and issues</>,
+        description: <>Submit requests</>,
         Image: FeedbackIcon,
         slug: "https://bridgesplit.canny.io"
 
@@ -52,7 +52,10 @@ function Resource({ title, Image, slug, description }: Resource) {
                         <div className={clsx(styles.resourceCardContent)}>
                             <Image className={styles.resourceCardIcon} role="img" />
                             <div>
-                                <h3>{title}</h3>
+                                <h4>{title}</h4>
+                                <p className="body2 color-caption">
+                                    {description}
+                                </p>
 
                             </div>
                         </div>
@@ -70,10 +73,10 @@ function Resource1({ title, Image, slug, description }: Resource) {
                 <div className={clsx(styles.resourceCardContent)}>
                     <Image className={styles.resourceCardIcon} role="img" />
                     <div>
-                        <h3>{title}</h3>
-                        {/* <p>
+                        <h4>{title}</h4>
+                        <p className="body2">
                             {description}
-                        </p> */}
+                        </p>
                     </div>
                 </div >
             </a>
@@ -85,6 +88,7 @@ export default function HomepageResources(): JSX.Element {
     return (
         <section>
             <div className={clsx("container", styles.resourcesContainer)}>
+                <h3>More ways to explore</h3>
                 <div className="row">
                     {ResourceList.map((props, idx) => (
                         <Resource key={idx} {...props} />

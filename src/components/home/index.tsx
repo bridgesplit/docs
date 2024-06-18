@@ -12,13 +12,22 @@ function HomepageHeader() {
   return (
     <header className={clsx(styles.heroBanner)}>
       <div className={clsx("container")}>
-        <Heading as="h1">
-          Bridgesplit Docs
-        </Heading>
-        <SearchBar />
+        <div className={clsx("col col--8 col--offset-2")}>
+
+          <Heading as="h1">
+            Bridgesplit Docs
+          </Heading>
+          <p className={clsx(styles.heroSubtitle)}>
+            Bridgesplit provides the borrow-lend infrastructure to unlock novel loan collateral and structures on more efficient, flexible capital markets.
+
+          </p>
+          <SearchBar />
+        </div>
       </div>
     </header>)
 }
+
+
 
 
 

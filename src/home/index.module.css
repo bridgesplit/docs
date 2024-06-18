@@ -6,8 +6,7 @@
 
 
 .heroBanner {
-  padding: 2rem 0;
-  padding-top: 8rem;
+  padding-bottom: 2rem 0rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -19,6 +18,10 @@
   }
 }
 
+.heroSubtitle {
+  font-size: var(--h3-font-size);
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -26,9 +29,9 @@
 }
 
 .homeContainer {
-  background-image: url("../../static/img/home-background.png");
+  /* background-image: url("../../static/img/home-background.png");
   background-size: auto 120%;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: bottom;
+  background-position-y: bottom; */
 }

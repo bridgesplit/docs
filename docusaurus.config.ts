@@ -8,7 +8,6 @@ const config: Config = {
   favicon: 'img/favicon.ico',
   url: 'https://docs.bridgesplit.com',
   baseUrl: '/',
-
   organizationName: 'bridgesplit',
   projectName: 'docs',
 
@@ -24,7 +23,8 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts'
+          sidebarPath: './sidebars.ts',
+          routeBasePath: '/'
         },
         blog: false,
         theme: {
@@ -64,14 +64,15 @@ const config: Config = {
         //   label: 'Protocol',
         // },
         {
-          href: 'https://github.com/bridgesplit',
-          label: 'GitHub',
+          type: 'html',
           position: 'right',
+          value: '<button class="button--feedback button button--outline button--primary">Feedback</button>',
         },
+
         {
-          href: 'https://app.bridgesplit.com',
-          label: 'App',
+          type: 'html',
           position: 'right',
+          value: '<button class="button button--outline button--primary">Launch App</button>',
         },
         {
           type: 'search',
@@ -83,62 +84,78 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Concepts',
-              to: 'concepts/'
-            },
-            // {
-            //   label: 'Guides',
-            //   to: 'guides/',
-            // },
-            // {
-            //   label: 'Protocol',
-            //   to: 'protocol/'
-            // },
-          ],
-        },
-        {
-          title: 'Ecosystem',
-          items: [
-            {
-              label: 'Website',
-              href: 'https://bridgesplit.com'
-            },
-            {
-              label: 'App',
-              href: 'https://app.bridgesplit.com'
-            },
-            {
-              label: 'Analytics',
-              href: 'https://dashboards.bridgesplit.com/login'
-            },
-            {
-              label: 'Feedback',
-              href: 'https://bridgesplit.canny.io/feedback'
-            },
-
+          title: "Docs",
+          items: [{
+            label: 'Concepts',
+            to: 'concepts/overview'
+          },
+          {
+            label: 'Guides',
+            to: 'guides/',
+          },
+          {
+            label: 'Protocol',
+            to: 'protocol/'
+          },
           ]
         },
         {
-          title: 'Community',
-          items: [
-            {
-              label: 'Discord',
-              href: 'https://discord.com/invite/A9xnqqzACF',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/bridgesplit',
-            },
-            {
-              label: 'Blog',
-              href: 'https://bridgesplit.com/blog',
-            },
-          ],
+          title: 'Product',
+          items: [{
+            label: 'Borrow',
+            to: 'https://app.bridgesplit.com'
+          },
+          {
+            label: 'Lend',
+            to: 'https://app.bridgesplit.com'
+          },
+
+          {
+            label: 'Businesses',
+            to: 'https://app.bridgesplit.com'
+          },
+
+          {
+            label: 'Build',
+            to: 'https://www.bridgesplit.com/developers'
+          },
+          ]
+        },
+        {
+          title: 'Resources',
+          items: [{
+            label: 'Docs',
+            to: '/'
+          }, {
+            label: 'Feedback',
+            to: 'bridgesplit.canny.io'
+          },
+          {
+            label: 'Support',
+            to: 'https://discord.com/channels/895116209958297631/932703647236771850'
+          },
+          {
+            label: 'Analytics',
+            to: 'https://dashboards.bridgesplit.com'
+          }
+          ]
+        },
+        {
+          title: 'Company',
+          items: [{
+            label: 'About',
+            to: 'https://bridgesplit.com/about'
+          }, {
+            label: 'Careers',
+            to: 'https://careers.bridgesplit.com'
+          },
+          {
+            label: 'Blog',
+            to: 'ttps://bridgesplit.com/blog'
+          },
+          ]
         }
-      ],
+      ]
     },
     prism: {
       theme: prismThemes.github,

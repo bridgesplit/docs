@@ -68,7 +68,7 @@ function Feature({ title, Icon, description, slug, disabled }: FeatureItem) {
               {disabled ? <ComingSoonTag /> : <OutwardArrowIcon className={clsx(styles.caption)} role="img" />}
             </div>
             <h3>{title}</h3>
-            <p>
+            <p className='body2 color-caption'>
               {description}
             </p>
           </div>
