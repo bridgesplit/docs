@@ -129,19 +129,10 @@ a>.card:hover {
   border: 1px solid var(--divider-color-dark)
 }
 
-a>.card.disabled:hover {
-  border: 1px solid var(--divider-color);
-  pointer-events: none !important;
 
-}
 
-a>.card.disabled {
-  pointer-events: none !important;
-  cursor: default !important;
-}
-
-a>.card.disabled,
-a>.card.disabled h3 {
+.card.disabled,
+.card.disabled h3 {
   color: var(--text-disabled-color) !important;
 
 

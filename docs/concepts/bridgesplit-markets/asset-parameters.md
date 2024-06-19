@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 # Asset Parameters
-Borrowers and lenders on Bridgesplit Markets interact via virtualized Limit Creditbooks with standardized terms including principal and collateral options, principal and collateral oracles, and loan terms. These standardized terms are available below. More information on terms and how they affect a loan is available in [Protocol Concepts](concepts/protocol-concepts/bilateral-loans#terms).
+Borrowers and lenders on Bridgesplit Markets interact via virtualized Limit Creditbooks with standardized terms including principal and collateral options, principal and collateral oracles, and loan terms. These standardized terms are available below. More information on terms and how they affect a loan is available in [Protocol Concepts](/concepts/protocol-concepts/bilateral-loans#terms).
 ## Loan Terms
 - **Loan Type**: Zero-Coupon (single payment at maturity)
 - **Default Type**: Price-based and/or payment-based (lender-specified)

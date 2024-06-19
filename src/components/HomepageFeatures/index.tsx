@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
         Learn about the core concepts of the Bridgesplit Protocol, Bridgesplit Markets, the Creditbook, and more.
       </>
     ),
-    slug: "/docs/concepts/overview",
+    slug: "/concepts/overview",
     disabled: false
   },
   {
@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
         Learn how to get started borrowing and lending on Bridgesplit with easy-to-follow user guides.
       </>
     ),
-    slug: "/docs/user-guides",
+    slug: "/user-guides",
     disabled: true
 
   },
@@ -47,7 +47,7 @@ const FeatureList: FeatureItem[] = [
         Learn about the artchitecture of the Bridgesplit Protocol smart contracts through guided examples.
       </>
     ),
-    slug: "/docs/protocol",
+    slug: "/protocol",
     disabled: true
 
   },
@@ -56,24 +56,28 @@ function ComingSoonTag() {
   return <div className={clsx(styles.tag)}><p>Coming Soon</p></div>
 }
 
+
 function Feature({ title, Icon, description, slug, disabled }: FeatureItem) {
+  const content = (<div className={clsx('card', disabled ? 'disabled' : '')}>
+    <div className={clsx('card__body')}>
+      <div className={clsx(styles.cardIconRow)}>
+        <Icon role="img" />
+        {disabled ? <ComingSoonTag /> : <OutwardArrowIcon className={clsx(styles.caption)} role="img" />}
+      </div>
+      <h3>{title}</h3>
+      <p className='body2 color-caption'>
+        {description}
+      </p>
+    </div>
+  </div >);
   return (
     <div className={clsx('col col--4 ')}>
-      <a target="_self" href={slug} className={clsx(styles.linkedCard)}>
+      {
+        disabled ?
+          content :
+          <a target="_self" href={slug} className={clsx(styles.linkedCard)}>{content}</a>
 
-        <div className={clsx('card', disabled ? 'disabled' : '')}>
-          <div className={clsx('card__body')}>
-            <div className={clsx(styles.cardIconRow)}>
-              <Icon role="img" />
-              {disabled ? <ComingSoonTag /> : <OutwardArrowIcon className={clsx(styles.caption)} role="img" />}
-            </div>
-            <h3>{title}</h3>
-            <p className='body2 color-caption'>
-              {description}
-            </p>
-          </div>
-        </div >
-      </a>
+      }
     </div >
   )
 };

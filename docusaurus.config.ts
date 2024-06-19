@@ -89,14 +89,14 @@ const config: Config = {
             label: 'Concepts',
             to: 'concepts/overview'
           },
-          {
-            label: 'Guides',
-            to: 'guides/',
-          },
-          {
-            label: 'Protocol',
-            to: 'protocol/'
-          },
+            // {
+            //   label: 'Guides',
+            //   to: 'guides/',
+            // },
+            // {
+            //   label: 'Protocol',
+            //   to: 'protocol/'
+            // },
           ]
         },
         {
@@ -128,7 +128,7 @@ const config: Config = {
             to: '/'
           }, {
             label: 'Feedback',
-            to: 'bridgesplit.canny.io'
+            to: 'https://bridgesplit.canny.io'
           },
           {
             label: 'Support',
