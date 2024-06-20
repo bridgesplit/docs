@@ -51,12 +51,12 @@ const config: Config = {
           position: 'left',
           label: 'Concepts',
         },
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'userGuides',
-        //   position: 'left',
-        //   label: 'Guides',
-        // },
+        {
+          type: 'docSidebar',
+          sidebarId: 'userGuides',
+          position: 'left',
+          label: 'Guides',
+        },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'protocol',
@@ -89,10 +89,10 @@ const config: Config = {
             label: 'Concepts',
             to: 'concepts/overview'
           },
-            // {
-            //   label: 'Guides',
-            //   to: 'guides/',
-            // },
+          {
+            label: 'Guides',
+            to: 'guides/',
+          },
             // {
             //   label: 'Protocol',
             //   to: 'protocol/'
@@ -156,6 +156,14 @@ const config: Config = {
           ]
         }
       ]
+    },
+    algolia: {
+      appId: 'YOUR_APP_ID',
+      apiKey: 'YOUR_SEARCH_API_KEY',
+      indexName: 'YOUR_INDEX_NAME',
+      searchParameters: {},
+      searchPagePath: 'search',
+      insights: false,
     },
     prism: {
       theme: prismThemes.github,
