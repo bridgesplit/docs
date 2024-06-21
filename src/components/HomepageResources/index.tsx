@@ -66,24 +66,6 @@ function Resource({ title, Image, slug, description }: Resource) {
     );
 }
 
-function Resource1({ title, Image, slug, description }: Resource) {
-    return (
-        <div className={clsx('col col--3 ')}>
-            <a target="_blank" href={slug} className={clsx(styles.linkedCard)}>
-                <div className={clsx(styles.resourceCardContent)}>
-                    <Image className={styles.resourceCardIcon} role="img" />
-                    <div>
-                        <h4>{title}</h4>
-                        <p className="body2">
-                            {description}
-                        </p>
-                    </div>
-                </div >
-            </a>
-        </div >
-    );
-}
-
 export default function HomepageResources(): JSX.Element {
     return (
         <section>

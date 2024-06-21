@@ -3,14 +3,12 @@ title: Explore by Issuer
 draft: true
 ---
 # Exploring by Collateral
-
-## View the "Discover asset classes" on the "Explore page" to view novel collateral assets supported on Bridgesplit.
-![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/3ae85913-c7b4-4021-a357-de35d46a71fc/1/50/89.393939393939?0)
-
-## Click on "See all" to browse all available collateral asset classes
-![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/b38aa8e4-e0c8-45da-bfe2-d14727f65b59/1/89.68253968254/59.207459207459?0)
-
-## Click on asset class to the "Collateral Borrow" page and view available offers. 
-![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/eafa10e9-62ca-4d6e-bebb-a4a2bd6cb0ac/2.5/10.31746031746/88.461538461538?0)
-You'll be able to modify all selections before confirming your borrow. To learn about the Market Borrow page, visit \[Browse a Market\]().
-![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/7917c885-04b9-4143-b1f3-6d6f5fce338c/1/9.7883597883598/52.671547202797?0)
+You can browse available offers based on collateral issuer across all markets with the Issuer Detail page.
+1. Explore eligible collateral. Featured issuers of eligible collateral are displayed on the Explore page. 
+![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/40e1cdca-b611-4d50-8563-31b9951ab85c/1/50/88.344988344988?0)
+2. Click "See all" to view all issuers by category.
+![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/d0a5926f-4f54-4e39-bc41-4fede47579f7/1/89.68253968254/58.158508158508?0)
+3. Click on an issuer to view available offers on the Issuer Detail page. 
+![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/abc42bcc-569d-4de9-b22a-7582787d0844/1/24.941612929894/22.785547785548?0)
+![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/13a6680d-224f-437a-b6dc-c1c71a87637d/1/89.68253968254/102.15617715618?0)
+![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/03939ca4-6a4c-4ae2-aee4-5696b597db5a/1/0/0?0)

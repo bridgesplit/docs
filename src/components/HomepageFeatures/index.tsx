@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
     slug: "/user-guides",
-    disabled: true
+    disabled: false
 
   },
   {

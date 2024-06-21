@@ -5,7 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
+html[data-theme='dark'] {
   --primary-color: rgba(255, 255, 255, 0.95);
   --primary-background-color: rgba(255, 255, 255, 0.1);
   --primary-background-color-light: rgba(255, 255, 255, 0.05);
@@ -32,7 +32,8 @@
   --padding: 20px;
   --max-width: 1100px;
   --navbar-height: 70px;
-  --ifm-breadcrumb-padding-horizontal: 0.4rem;
+  --ifm-breadcrumb-padding-horizontal: 0rem;
+
   --ifm-navbar-height: var(--navbar-height);
   --ifm-color-primary: var(--primary-color);
   --ifm-font-size-base: var(--body1-font-size);
@@ -67,6 +68,10 @@
 
 }
 
+.padding-top--md {
+  padding-top: 2rem !important;
+}
+
 /* 
 .markdown {
   --ifm-h1-vertical-rhythm-top: 1.5;
@@ -86,6 +91,12 @@
 
 }
 
+/* @media (min-width: 997px) {
+  .docs-doc-id-index .docItemCol_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem-Layout-styles-module {
+    max-width: 100% !important;
+  }
+} */
+
 @media (min-width: 997px) {
   :root {
     --doc-sidebar-width: 250px !important;
@@ -94,12 +105,12 @@
 
 }
 
-li::marker {
+html[data-theme='dark'] li::marker {
   color: var(--text-caption-color);
   font-weight: var(--ifm-font-weight-bold);
 }
 
-.menu__caret {
+html[data-theme='dark'] .menu__caret {
   color: var(--text-caption-color);
 }
 
@@ -129,11 +140,13 @@ li::marker {
   transform: rotateZ(90deg);
 }
 
-.menu__caret:before,
-.menu__link--sublist-caret:after {
+html[data-theme='dark'] .menu__caret:before,
+html[data-theme='dark'] .menu__link--sublist-caret:after {
   background: var(--ifm-menu-link-sublist-icon) 50% / 0.75rem 0.75rem no-repeat;
+  filter: none !important;
 
 }
+
 
 /* 
 .menu__caret:before {
@@ -160,7 +173,7 @@ li::marker {
 
 }
 
-.footer--dark {
+html[data-theme='dark'] .footer--dark {
   --ifm-footer-background-color: var(--background-color);
   border-top: 2px solid var(--divider-color);
 
@@ -193,7 +206,8 @@ a>.card:hover {
 }
 
 .markdown h1:first-child {
-  --ifm-h1-font-size: var(--h1-font-size);
+  --ifm-h1-font-size: 2.5rem;
+  margin-top: 1rem;
 }
 
 .markdown h2 {
@@ -204,8 +218,8 @@ a>.card:hover {
   color: var(--text-caption-color)
 }
 
-ul.breadcrumbs> :first-child {
-  display: none;
+ul.breadcrumbs>*>* {
+  background-color: transparent !important;
 }
 
 .markdown h3 {
@@ -224,7 +238,7 @@ ul.breadcrumbs> :first-child {
   border-color: var(--divider-color);
 }
 
-.button--feedback {
+html[data-theme='dark'] .button--feedback {
   color: var(--text-caption-color);
 }
 
@@ -294,7 +308,7 @@ ul.breadcrumbs> :first-child {
 
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+/* [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -303,7 +317,7 @@ ul.breadcrumbs> :first-child {
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-}
+} */
 
 b {
   font-weight: 500;

@@ -24,11 +24,12 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/'
+          routeBasePath: '/',
         },
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
+
         },
       } satisfies Preset.Options,
     ],
@@ -36,7 +37,9 @@ const config: Config = {
 
   themeConfig: {
     colorMode: {
-      disableSwitch: true
+      disableSwitch: true,
+      defaultMode: 'dark'
+
     },
     navbar: {
       title: 'Bridgesplit Docs',

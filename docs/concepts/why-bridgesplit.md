@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 # Why Bridgesplit
-## How does the Bridgesplit protocol compare to typical money markets?
+## How does the Bridgesplit protocol compare to traditional money market protocols?
 The advantages of the Bridgesplit protocol are best understood by explaining how the Limit Creditbook design differs from other lending protocols.
 
 In the first generation of DeFi lending protocols, the borrowing interest rate is determined by the utilization of the asset. As utilization increases, borrowing is discouraged and supplying is encouraged to preserve idle liquidity for withdrawals. Interest is paid only on borrowed assets, meaning enforced idle liquidity results in a reduced interest rate for lenders, as the total interest paid is distributed across all supplied assets, both lent and idle. In contrast, a peer-to-peer design matches individual lenders and borrowers based on flexible criteria such as asset type, amount, duration, and interest rate. Lenders and borrowers define the market, transacting at the best rate or with any collateral as long as there is a willing counterparty.
