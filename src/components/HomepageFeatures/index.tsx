@@ -35,7 +35,7 @@ const FeatureList: FeatureItem[] = [
         Learn how to get started borrowing and lending on Bridgesplit with easy-to-follow user guides.
       </>
     ),
-    slug: "/user-guides",
+    slug: "/user-guides/create-an-account",
     disabled: false
 
   },

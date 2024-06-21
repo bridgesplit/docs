@@ -12,7 +12,7 @@ function HomepageHeader() {
   return (
     <header className={clsx(styles.heroBanner)}>
       <div className={clsx("container")}>
-        <div className={clsx("col col--12")}>
+        <div className={clsx("col col--12", styles.heroContent)}>
 
           <Heading as="h1">
             Bridgesplit Docs

@@ -72,6 +72,15 @@ html[data-theme='dark'] {
   padding-top: 2rem !important;
 }
 
+.DocSearch-Button {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: var(--text-caption-color) !important;
+}
+
 /* 
 .markdown {
   --ifm-h1-vertical-rhythm-top: 1.5;
