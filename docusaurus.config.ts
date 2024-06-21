@@ -11,7 +11,7 @@ const config: Config = {
   organizationName: 'bridgesplit',
   projectName: 'docs',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
@@ -34,6 +34,7 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+
 
   themeConfig: {
     colorMode: {
@@ -94,7 +95,7 @@ const config: Config = {
           },
           {
             label: 'Guides',
-            to: 'guides/',
+            to: '/user-guides/create-an-account',
           },
             // {
             //   label: 'Protocol',

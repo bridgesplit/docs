@@ -2,7 +2,7 @@
 draft: false
 ---
 # Borrow
-Use the **Market page** to see helpful information as you borrow. Users may also borrow using [**Quick Borrow**](quick-borrow) and the [**Issuer Detail page**](/user-guides/borrowing/explore-markets/explore-by-issuer)
+Use the **Market page** to see helpful information as you borrow. Users may also borrow using [**Quick Borrow**](quick-borrow.md) and the [**Issuer Detail page**](../explore-markets/explore-by-issuer.md)
 
 1. Set the borrowed amount using the asset inputs.
 ![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/d50ba294-d5d3-4d6f-80ce-d66380add967/1/95.634920634921/22.814685314685?0)
