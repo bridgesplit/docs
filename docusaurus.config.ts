@@ -162,9 +162,9 @@ const config: Config = {
       ]
     },
     algolia: {
-      appId: 'YOUR_APP_ID',
-      apiKey: 'YOUR_SEARCH_API_KEY',
-      indexName: 'YOUR_INDEX_NAME',
+      appId: '696ZYCF4KU',
+      apiKey: 'd8e8aaab708583285d44b378848a2687',
+      indexName: 'DOCS',
       searchParameters: {},
       searchPagePath: 'search',
       insights: false,

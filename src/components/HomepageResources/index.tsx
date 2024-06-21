@@ -45,7 +45,7 @@ const ResourceList: Resource[] = [
 
 function Resource({ title, Image, slug, description }: Resource) {
     return (
-        <div className={clsx('col col--3 ')}>
+        <div className={clsx('col col--6 ')}>
             <a target="_blank" href={slug} className={clsx(styles.linkedCard)}>
                 <div className={clsx('card', styles.outlinedCard)}>
                     <div className={clsx('card__body')}>
@@ -72,7 +72,12 @@ export default function HomepageResources(): JSX.Element {
             <div className={clsx("container", styles.resourcesContainer)}>
                 <h3>More ways to explore</h3>
                 <div className="row">
-                    {ResourceList.map((props, idx) => (
+                    {ResourceList.slice(0, 2).map((props, idx) => (
+                        <Resource key={idx} {...props} />
+                    ))}
+                </div>
+                <div className="row">
+                    {ResourceList.slice(2, 5).map((props, idx) => (
                         <Resource key={idx} {...props} />
                     ))}
                 </div>

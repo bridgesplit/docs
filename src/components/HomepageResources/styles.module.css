@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 .resourceCardIcon1 {
@@ -18,19 +17,23 @@
 .resourceCardIcon {
     height: 2rem;
     width: 2rem;
-    margin-right: var(--padding);
+    margin-right: 1rem;
     /* margin-bottom: calc(var(--padding)); */
     display: flex;
     align-items: center;
     /* background-color: var(--background-card-color); */
     color: var(--text-caption-color);
-    border-radius: var(--border-radius);
 }
 
 .resourcesContainer {
     display: flex;
     flex-direction: column;
     padding-top: 2em;
+    gap: 1rem;
+}
+
+.resourcesContainer> :nth-child(2) {
+    padding-bottom: 1rem;
 }
 
 .resourceCardContent h4 {
