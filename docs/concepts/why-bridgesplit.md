@@ -18,4 +18,4 @@ Despite these disadvantages, the pool-based model was designed to address a limi
 2. Lending rate = borrowing rate: Lenders and borrowers access the best available market rates by coordinating directly.
 3. Capital efficiency: One-to-one lending relationships eliminate the need for unnecessarily idle assets.
 4. Fixed rates: Fluctuating rates are unsuitable for executing specific investment strategies. Decoupling interest rates from utilization ratios enables fixed rates and other loan structuring functionality. 
-5. Risk management: In pool-based models, risk is pooled across assets and participants are subject to algorithmic and unviersal risk management. The Bridgesplit protocol offers unconstrained flexibility in loan structuring, pricing options, and collateral structuring, giving lenders full control over their risk profile.
+5. Risk management: In pool-based models, risk is pooled across assets and participants are subject to algorithmic and universal risk management. The Bridgesplit protocol offers unconstrained flexibility in loan structuring, pricing options, and collateral structuring, giving lenders full control over their risk profile.

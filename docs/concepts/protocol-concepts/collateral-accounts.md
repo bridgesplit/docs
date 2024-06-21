@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 # Collateral Accounts
-Collateral Accounts represent another significant difference between the Bridgesplit Protocol and other lending protocols. Unlike pool-based models where collateral is pooled and rehypothecated, collateral is deposited to a loan-specific, programatically-controlled Collateral Account for the duration of the loan. Collateral on Bridgesplit is not rehypothecated and remains non-transferrable for the duration of the loan. This approach offers two key benefits.
+Collateral Accounts represent another significant difference between the Bridgesplit Protocol and other lending protocols. Unlike pool-based models where collateral is pooled and rehypothecated, collateral is deposited to a loan-specific, programmatically-controlled Collateral Account for the duration of the loan. Collateral on Bridgesplit is not rehypothecated and remains non-transferable for the duration of the loan. This approach offers two key benefits.
 
 ## Collateral Eligibility
 The absence of collateral segregation on other lending protocols limits the diversity of eligible collateral. 

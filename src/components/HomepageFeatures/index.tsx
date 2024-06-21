@@ -44,7 +44,7 @@ const FeatureList: FeatureItem[] = [
     Icon: CodeIcon,
     description: (
       <>
-        Learn about the artchitecture of the Bridgesplit Protocol smart contracts through guided examples.
+        Learn about the architecture of the Bridgesplit Protocol smart contracts through guided examples.
       </>
     ),
     slug: "/protocol",

@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 # Risk Management
-When using the Bridgesplit Protocol, it's important to understand and manage the financial and operational risks invovled. THis page outlines key risks to consider and provides guidance on mitigating them. Some of these risks apply only to borrowers or only to lenders.
+When using the Bridgesplit Protocol, it's important to understand and manage the financial and operational risks involved. THis page outlines key risks to consider and provides guidance on mitigating them. Some of these risks apply only to borrowers or only to lenders.
 ## Financial Risks
 ### Interest Rate Risk
 Interest rate risk arises from the potential for market rates to diverge from the fixed rate of your loan over time. Borrowing or lending at a fixed rate for a specific duration may result in your loan being more expensive or cheaper than the prevailing market rate. The sensitivity to interest rate changes increases with loan duration.

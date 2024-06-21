@@ -70,13 +70,13 @@ const config: Config = {
         {
           type: 'html',
           position: 'right',
-          value: '<button class="button--feedback button button--outline button--primary">Feedback</button>',
+          value: '<a class="button--feedback button button--outline button--primary" href="https://bridgesplit.canny.io" target="_blank">Feedback</a>',
         },
 
         {
           type: 'html',
           position: 'right',
-          value: '<button class="button button--outline button--primary">Launch App</button>',
+          value: '<a class="button button--outline button--primary" href="https://app.bridgesplit.com" target="_blank">Launch App</a>',
         },
         {
           type: 'search',
@@ -107,16 +107,16 @@ const config: Config = {
           title: 'Product',
           items: [{
             label: 'Borrow',
-            to: 'https://app.bridgesplit.com'
+            to: 'https://app.bridgesplit.com/borrow/USDC'
           },
           {
             label: 'Lend',
-            to: 'https://app.bridgesplit.com'
+            to: 'https://app.bridgesplit.com/lend/USDC'
           },
 
           {
             label: 'Businesses',
-            to: 'https://app.bridgesplit.com'
+            to: 'https://www.bridgesplit.com/businesses'
           },
 
           {
@@ -130,7 +130,8 @@ const config: Config = {
           items: [{
             label: 'Docs',
             to: '/'
-          }, {
+          },
+          {
             label: 'Feedback',
             to: 'https://bridgesplit.canny.io'
           },
@@ -155,7 +156,7 @@ const config: Config = {
           },
           {
             label: 'Blog',
-            to: 'ttps://bridgesplit.com/blog'
+            to: 'https://bridgesplit.com/blog'
           },
           ]
         }

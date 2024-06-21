@@ -38,7 +38,6 @@ const ResourceList: Resource[] = [
         description: <>Submit requests</>,
         Image: FeedbackIcon,
         slug: "https://bridgesplit.canny.io"
-
     }
 ]
 
