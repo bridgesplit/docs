@@ -13,19 +13,7 @@ The borrower's receives funds at the lowest rate on the market and the collatera
 1. The loan has not been fully repaid by the due date (Payment-Based Default)
 2. The loan's health factor falls below 0% (Price-Based Default)
 
-## Health Factor
-A loan's health factor helps a borrower easily understand a loan's real-time liquidation risk. The health factor has a maximum value of 100%. A health factor of 0% signals a loan is at risk of liquidation, meaning its collateralization ratio no longer meets the liquidation threshold.
-
-The health factor is calculated with the following formula:
-Health Factor  = 1 - ( Collateralization Ratio ÷ Liquidation Ratio )
-
-where
-
-Collateralization Ratio = Loan Value in USD ÷ Collateral Value in USD,
-
-and the Liquidation Ratio is a per-collateral, protocol-determined value. These values can be found here.
-
-The liquidation Ratio is fixed for the lifetime of the loan whereas the collateralization ratio may fluctuate over the course of a loan as the value of the collateral or loan changes.
+To learn more about defaults and how health factor is calculated, see [Loan Health & Defaults](health-factor-and-defaults.md).
 
 A borrower has two ways to improve a loan's health factor: (1) topping up collateral (2) repaying a loan or portion of a loan early.
 

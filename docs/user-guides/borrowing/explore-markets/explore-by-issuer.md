@@ -2,7 +2,7 @@
 title: Explore by Issuer
 draft: true
 ---
-# Exploring by Collateral
+# Explore by Issuer
 You can browse available offers based on collateral issuer across all markets with the Issuer Detail page.
 1. Explore eligible collateral. Featured issuers of eligible collateral are displayed on the Explore page. 
 ![](https://d3q7ie80jbiqey.cloudfront.net/media/image/zoom/40e1cdca-b611-4d50-8563-31b9951ab85c/1/50/88.344988344988?0)
