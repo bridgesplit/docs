@@ -6,14 +6,14 @@ import AppLogo from "@site/static/img/app_logo.svg";
 import AnalyticsIcon from "@site/static/img/icons/analytics.svg";
 import FeedbackIcon from "@site/static/img/icons/feedback.svg";
 
-type Resource = {
+type ResourceItem = {
     title: string;
     Image: React.ComponentType<React.ComponentProps<'svg'>>;
     description: JSX.Element;
     slug: string,
 };
 
-const ResourceList: Resource[] = [
+const ResourceItems: ResourceItem[] = [
     {
         title: "Discord",
         description: <>Join community</>,
@@ -42,20 +42,17 @@ const ResourceList: Resource[] = [
 ]
 
 
-function Resource({ title, Image, slug, description }: Resource) {
+function Resource({ title, Image, slug, description }: ResourceItem) {
     return (
         <div className={clsx('col col--6 ')}>
-            <a target="_blank" href={slug} className={clsx(styles.linkedCard)}>
-                <div className={clsx('card', styles.outlinedCard)}>
+            <a target="_blank" href={slug}>
+                <div className={clsx('card', styles.resource)}>
                     <div className={clsx('card__body')}>
-                        <div className={clsx(styles.resourceCardContent)}>
-                            <Image className={styles.resourceCardIcon} role="img" />
+                        <div className={clsx(styles.resourceContent)}>
+                            <Image className={styles.resourceIcon} role="img" />
                             <div>
                                 <h4>{title}</h4>
-                                <p className="body2 color-caption">
-                                    {description}
-                                </p>
-
+                                <p className={styles.resourceBody}>{description}</p>
                             </div>
                         </div>
                     </div>
@@ -65,18 +62,18 @@ function Resource({ title, Image, slug, description }: Resource) {
     );
 }
 
-export default function HomepageResources(): JSX.Element {
+export default function Resources(): JSX.Element {
     return (
         <section>
             <div className={clsx("container", styles.resourcesContainer)}>
                 <h3>More ways to explore</h3>
                 <div className="row">
-                    {ResourceList.slice(0, 2).map((props, idx) => (
+                    {ResourceItems.slice(0, 2).map((props, idx) => (
                         <Resource key={idx} {...props} />
                     ))}
                 </div>
                 <div className="row">
-                    {ResourceList.slice(2, 5).map((props, idx) => (
+                    {ResourceItems.slice(2, 5).map((props, idx) => (
                         <Resource key={idx} {...props} />
                     ))}
                 </div>

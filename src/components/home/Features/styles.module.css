@@ -1,17 +1,4 @@
-.features {
-  display: flex;
-  align-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 100%;
-}
-
-.featureSvg {
-  height: 200px;
-  width: 200px;
-}
-
-.cardIconRow {
+.featureHeader {
   height: 24px;
   display: flex;
   flex-direction: row;
@@ -19,15 +6,13 @@
   margin-bottom: var(--ifm-card-vertical-spacing);
 }
 
-
-
-
-.caption {
+.featureBody {
+  font-size: var(--body2-font-size);
   color: var(--text-caption-color)
 }
 
-a.linkedCard:hover {
-  text-decoration: none;
+.featureArrowIcon {
+  color: var(--text-caption-color)
 }
 
 .tag {

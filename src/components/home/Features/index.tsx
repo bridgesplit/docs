@@ -15,7 +15,7 @@ type FeatureItem = {
   disabled: boolean;
 };
 
-const FeatureList: FeatureItem[] = [
+const FeatureItems: FeatureItem[] = [
   {
     title: 'What is Bridgesplit',
     Icon: InfoIcon,
@@ -52,45 +52,46 @@ const FeatureList: FeatureItem[] = [
 
   },
 ];
-function ComingSoonTag() {
-  return <div className={clsx(styles.tag)}><p>Coming Soon</p></div>
+function Tag({ text }: { text: string }) {
+  return <div className={clsx(styles.tag)}><p>{text}</p></div>
 }
 
-
-function Feature({ title, Icon, description, slug, disabled }: FeatureItem) {
-  const content = (<div className={clsx('card', disabled ? 'disabled' : '')}>
-    <div className={clsx('card__body')}>
-      <div className={clsx(styles.cardIconRow)}>
-        <Icon role="img" />
-        {disabled ? <ComingSoonTag /> : <OutwardArrowIcon className={clsx(styles.caption)} role="img" />}
+function FeatureContent({ title, Icon, description, disabled }: FeatureItem) {
+  return (
+    <div className={clsx('card', disabled && 'disabled')}>
+      <div className={clsx('card__body')}>
+        <div className={clsx(styles.featureHeader)}>
+          <Icon role="img" />
+          {disabled ? <Tag text="Coming Soon" /> : <OutwardArrowIcon className={clsx(styles.featureArrowIcon)} role="img" />}
+        </div>
+        <h3>{title}</h3>
+        <p className={clsx(styles.featureBody)}>{description}</p>
       </div>
-      <h3>{title}</h3>
-      <p className='body2 color-caption'>
-        {description}
-      </p>
-    </div>
-  </div >);
+    </div >
+  )
+}
+
+function Feature(item: FeatureItem) {
+  const { slug, disabled } = item;
   return (
     <div className={clsx('col col--4 ')}>
       {
-        disabled ?
-          content :
-          <a target="_self" href={slug} className={clsx(styles.linkedCard)}>{content}</a>
+        disabled ? <FeatureContent {...item} /> :
+          <a target="_self" href={slug}><FeatureContent {...item} /></a>
 
       }
     </div >
   )
 };
-export default function HomepageFeatures(): JSX.Element {
+export default function Features(): JSX.Element {
   return (
-    <section className={styles.features} >
+    <section>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
+          {FeatureItems.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
-
       </div>
     </section >
   );

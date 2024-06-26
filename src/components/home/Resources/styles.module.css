@@ -1,0 +1,32 @@
+.resource {
+    background-color: transparent;
+}
+
+.resourceContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--card-padding)
+}
+
+.resourceBody {
+    font-size: var(--body2-font-size);
+    color: var(--text-caption-color)
+}
+
+.resourceIcon {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    color: var(--text-caption-color)
+}
+
+
+.resource h4 {
+    margin-bottom: 0.25rem;
+}
+
+.resource p {
+    margin-bottom: 0rem;
+}

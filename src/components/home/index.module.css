@@ -1,38 +1,7 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-
-
-.heroBanner {
-  padding-bottom: 2rem 0rem;
-  padding-top: 4rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.heroSubtitle {
+.subtitle {
   font-size: var(--h3-font-size);
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.homeContainer {
-  /* background-image: url("../../static/img/home-background.png");
-  background-size: auto 120%;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: bottom; */
+.header {
+  text-align: center;
 }

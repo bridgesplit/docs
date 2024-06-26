@@ -82,13 +82,13 @@ const config: Config = {
         {
           type: 'html',
           position: 'right',
-          value: '<a class="button--feedback button button--outline button--primary" href="https://bridgesplit.canny.io" target="_blank">Feedback</a>',
+          value: '<a class=" button button--outline " href="https://bridgesplit.canny.io" target="_blank">Feedback</a>',
         },
 
         {
           type: 'html',
           position: 'right',
-          value: '<a class="button button--outline button--primary" href="https://app.bridgesplit.com" target="_blank">Launch App</a>',
+          value: '<a class="button" href="https://app.bridgesplit.com" target="_blank">Launch App</a>',
         },
         {
           type: 'search',
@@ -177,7 +177,7 @@ const config: Config = {
     algolia: {
       appId: '696ZYCF4KU',
       apiKey: 'd8e8aaab708583285d44b378848a2687',
-      indexName: 'DOCS',
+      indexName: 'bridgesplit',
       searchParameters: {},
       searchPagePath: 'search',
       insights: false,
