@@ -1,5 +1,7 @@
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import React from 'react';
+
 
 import OutwardArrowIcon from '@site/static/img/icons/outward_arrow.svg'
 import InfoIcon from '@site/static/img/icons/info.svg'
@@ -7,15 +9,8 @@ import CodeIcon from '@site/static/img/icons/code.svg'
 import OpenBookIcon from '@site/static/img/icons/open_book.svg'
 
 
-type FeatureItem = {
-  title: string;
-  Icon: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
-  slug: string;
-  disabled: boolean;
-};
 
-const FeatureItems: FeatureItem[] = [
+const featureItems = [
   {
     title: 'What is Bridgesplit',
     Icon: InfoIcon,
@@ -52,11 +47,12 @@ const FeatureItems: FeatureItem[] = [
 
   },
 ];
-function Tag({ text }: { text: string }) {
+function Tag({ text }) {
   return <div className={clsx(styles.tag)}><p>{text}</p></div>
 }
 
-function FeatureContent({ title, Icon, description, disabled }: FeatureItem) {
+function FeatureContent(featureItem) {
+  const { title, Icon, description, disabled } = featureItem;
   return (
     <div className={clsx('card', disabled && 'disabled')}>
       <div className={clsx('card__body')}>
@@ -71,24 +67,24 @@ function FeatureContent({ title, Icon, description, disabled }: FeatureItem) {
   )
 }
 
-function Feature(item: FeatureItem) {
-  const { slug, disabled } = item;
+function Feature(featureItem) {
+  const { slug, disabled } = featureItem;
   return (
     <div className={clsx('col col--4 ')}>
       {
-        disabled ? <FeatureContent {...item} /> :
-          <a target="_self" href={slug}><FeatureContent {...item} /></a>
+        disabled ? <FeatureContent {...featureItem} /> :
+          <a target="_self" href={slug}><FeatureContent {...featureItem} /></a>
 
       }
     </div >
   )
 };
-export default function Features(): JSX.Element {
+export default function Features() {
   return (
     <section>
       <div className="container">
         <div className="row">
-          {FeatureItems.map((props, idx) => (
+          {featureItems.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>

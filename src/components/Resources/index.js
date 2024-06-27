@@ -7,14 +7,8 @@ import AppLogo from "@site/static/img/app_logo.svg";
 import AnalyticsIcon from "@site/static/img/icons/analytics.svg";
 import FeedbackIcon from "@site/static/img/icons/feedback.svg";
 
-type ResourceItem = {
-    title: string;
-    Image: React.ComponentType<React.ComponentProps<'svg'>>;
-    description: JSX.Element;
-    slug: string,
-};
 
-const ResourceItems: ResourceItem[] = [
+const resourceItems = [
     {
         title: "Discord",
         description: <>Join community</>,
@@ -43,7 +37,8 @@ const ResourceItems: ResourceItem[] = [
 ]
 
 
-function Resource({ title, Image, slug, description }: ResourceItem) {
+function Resource(resourceItem) {
+    const { title, Image, slug, description } = resourceItem;
     return (
         <div className={clsx('col col--6 ')}>
             <a target="_blank" href={slug}>
@@ -63,18 +58,18 @@ function Resource({ title, Image, slug, description }: ResourceItem) {
     );
 }
 
-export default function Resources(): JSX.Element {
+export default function Resources() {
     return (
         <section>
             <div className={clsx("container", styles.resourcesContainer)}>
                 <h3>More ways to explore</h3>
                 <div className="row">
-                    {ResourceItems.slice(0, 2).map((props, idx) => (
+                    {resourceItems.slice(0, 2).map((props, idx) => (
                         <Resource key={idx} {...props} />
                     ))}
                 </div>
                 <div className="row">
-                    {ResourceItems.slice(2, 5).map((props, idx) => (
+                    {resourceItems.slice(2, 5).map((props, idx) => (
                         <Resource key={idx} {...props} />
                     ))}
                 </div>
