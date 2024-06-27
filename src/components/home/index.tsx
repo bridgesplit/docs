@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-
+import React from 'react';
 import Features from '@site/src/components/Features';
 import SearchBar from '@theme/SearchBar'
 import styles from './index.module.css';

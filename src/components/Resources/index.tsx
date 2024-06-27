@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import React from 'react';
 
 import DiscordLogo from "@site/static/img/discord_logo.svg";
 import AppLogo from "@site/static/img/app_logo.svg";
