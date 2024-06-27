@@ -56,6 +56,8 @@ html[data-theme=dark] {
   --ifm-container-width-xl: var(--max-width);
   --ifm-container-width: var(--max-width);
   --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-navbar-link-color: var(--text-caption-color);
+  --ifm-navbar-hover-color: var(--text-body-color);
   --ifm-button-border-color: var(--divider-color);
   --ifm-hr-background-color: var(--divider-color);
   --ifm-menu-color: var(--text-caption-color);
@@ -180,6 +182,15 @@ p a {
 
 .navbar-sidebar__close>svg {
   height: 16px;
+}
+
+.navbar__link {
+  font-weight: 400;
+}
+
+.navbar__brand,
+.navbar__brand:hover {
+  color: var(--text-body-color);
 }
 
 /* Footer */
