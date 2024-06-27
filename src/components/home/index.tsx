@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 
-import Features from '@site/src/components/Home/Features';
+import Features from '@site/src/components/Features';
 import SearchBar from '@theme/SearchBar'
 import styles from './index.module.css';
-import Resources from '@site/src/components/Home/Resources';
+import Resources from '@site/src/components/Resources';
 
 function Header() {
   return (
