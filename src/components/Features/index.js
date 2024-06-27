@@ -67,8 +67,6 @@ function FeatureContent(featureItem) {
   )
 }
 
-
-
 function Feature(featureItem) {
   const { slug, disabled } = featureItem;
   return (
@@ -81,15 +79,16 @@ function Feature(featureItem) {
     </div >
   )
 };
-
-export const Features = () => (
-  <section>
-    <div className="container">
-      <div className="row">
-        {featureItems.map((props, idx) => (
-          <Feature key={idx} {...props} />
-        ))}
+export default function Features() {
+  return (
+    <section>
+      <div className="container">
+        <div className="row">
+          {featureItems.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
+        </div>
       </div>
-    </div>
-  </section >
-);
+    </section >
+  );
+}
