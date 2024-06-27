@@ -1,5 +1,6 @@
 ---
-draft: false
+sidebar_position: 1
+title: Borrow
 ---
 # Borrow
 Use the **Market Borrow** Page to see helpful information as you borrow. Users may also borrow using [**Quick Borrow**](quick-borrow.md) Page and the [**Issuer Detail**](/explore-markets/explore-by-issuer.md) Page.
