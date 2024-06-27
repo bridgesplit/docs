@@ -58,22 +58,22 @@ function Resource(resourceItem) {
     );
 }
 
-export default function Resources() {
-    return (
-        <section>
-            <div className={clsx("container", styles.resourcesContainer)}>
-                <h3>More ways to explore</h3>
-                <div className="row">
-                    {resourceItems.slice(0, 2).map((props, idx) => (
-                        <Resource key={idx} {...props} />
-                    ))}
-                </div>
-                <div className="row">
-                    {resourceItems.slice(2, 5).map((props, idx) => (
-                        <Resource key={idx} {...props} />
-                    ))}
-                </div>
+
+export const Resources = () =>
+(
+    <section>
+        <div className={clsx("container", styles.resourcesContainer)}>
+            <h3>More ways to explore</h3>
+            <div className="row">
+                {resourceItems.slice(0, 2).map((props, idx) => (
+                    <Resource key={idx} {...props} />
+                ))}
             </div>
-        </section >
-    );
-}
+            <div className="row">
+                {resourceItems.slice(2, 5).map((props, idx) => (
+                    <Resource key={idx} {...props} />
+                ))}
+            </div>
+        </div>
+    </section >
+);

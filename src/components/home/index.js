@@ -1,9 +1,9 @@
 import clsx from 'clsx';
 import React from 'react';
-import Features from '@site/src/components/Features';
+import { Features } from '@site/src/components/Features';
 import SearchBar from '@theme/SearchBar'
 import styles from './index.module.css';
-import Resources from '@site/src/components/Resources';
+import { Resources } from '@site/src/components/Resources';
 
 function Header() {
   return (
@@ -19,15 +19,14 @@ function Header() {
   )
 }
 
-export default function Home() {
-  return (
-    <main>
-      <Header />
-      <Features />
-      <div className={clsx("container")}>
-        <hr />
-      </div>
-      <Resources />
-    </main >
-  );
-}
+
+export const Home = () => (
+  <main>
+    <Header />
+    <Features />
+    <div className={clsx("container")}>
+      <hr />
+    </div>
+    <Resources />
+  </main >
+);
