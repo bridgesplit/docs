@@ -67,7 +67,7 @@ html[data-theme=dark] {
   --ifm-button-font-weight: 400;
   --ifm-alert-padding-vertical: var(--card-padding);
   --ifm-breadcrumb-separator: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 -800 800 800\" fill=\"white\" opacity=\"0.6\"><path d=\"M593.23-480 291.92-781.31q-11.92-11.92-11.61-28.38.31-16.46 12.23-28.39Q304.46-850 320.92-850t28.39 11.92l306.23 306.85q10.84 10.85 16.07 24.31 5.24 13.46 5.24 26.92t-5.24 26.92q-5.23 13.46-16.07 24.31L348.69-121.92q-11.92 11.92-28.07 11.61-16.16-.31-28.08-12.23-11.92-11.92-11.92-28.38t11.92-28.39L593.23-480Z\"/></svg>");
-
+  --ifm-breadcrumb-separator-filter: none;
   --ifm-alert-padding-horizontal: var(--card-padding);
   --ifm-menu-link-sublist-icon: url("data:image/svg+xml;utf8,<svg viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12.0064 10.3119L7.64776 14.6705C7.45287 14.8654 7.22696 14.9629 6.97005 14.9629C6.71314 14.9629 6.48724 14.8654 6.29235 14.6705C6.09745 14.4756 6 14.2497 6 13.9928C6 13.7359 6.10046 13.507 6.30138 13.3061L11.3419 8.26553C11.4376 8.17694 11.5413 8.1105 11.6529 8.0662C11.7645 8.02191 11.8841 7.99976 12.0117 7.99976C12.1392 7.99976 12.2588 8.02191 12.3705 8.0662C12.4821 8.1105 12.5822 8.17694 12.6708 8.26553L17.7113 13.3061C17.9123 13.507 18.0083 13.7315 17.9994 13.9795C17.9906 14.2276 17.8887 14.4491 17.6938 14.644C17.4989 14.8389 17.273 14.9363 17.0161 14.9363C16.7592 14.9363 16.5333 14.8389 16.3384 14.644L12.0064 10.3119Z\" fill=\"white\" fill-opacity=\"0.6\"/></svg>");
   /* Search */
@@ -81,14 +81,89 @@ html[data-theme=dark] {
   --docsearch-searchbox-shadow: none !important;
   --docsearch-searchbox-height: var(--button-height);
   --docsearch-hit-color: var(--ifm-font-color-base);
-  --docsearch-hit-active-color: var(--divider-color);
-  --docsearch-hit-background: var(--ifm-color-emphasis-100);
+  --docsearch-hit-active-color: var(--ifm-font-color-base);
   --docsearch-footer-shadow: none;
   --docsearch-footer-background: transparent;
+  --docsearch-hit-background: transparent;
+  --docsearch-highlight-color: var(--secondary-color);
+  --docsearch-hit-height: 64px;
   --ifm-breadcrumb-item-background-active: transparent;
   --docsearch-key-gradient: linear-gradient(-26.5deg,
       var(--ifm-color-emphasis-200) 0%,
       var(--ifm-color-emphasis-100) 100%);
+}
+
+.DocSearch-Hit-source {
+  color: var(--text-caption-color) !important;
+  font-weight: 400 !important;
+  font-size: var(--body2-font-size) !important;
+}
+
+.DocSearch-Hit a {
+  border-radius: var(--border-radius) !important;
+  border: 1px solid var(--divider-color);
+  box-shadow: none !important;
+  padding-left: var(--input-padding) !important;
+  padding-right: var(--input-padding) !important;
+
+}
+
+.searchResultItem_node_modules-\@docusaurus-theme-search-algolia-lib-theme-SearchPage-styles-module h2 {
+  font-size: var(--ifm-h3-font-size);
+}
+
+.searchResultItem_node_modules-\@docusaurus-theme-search-algolia-lib-theme-SearchPage-styles-module p {
+  font-size: var(--body2-font-size);
+}
+
+.search-result-match {
+  background: var(--secondary-background-color) !important;
+}
+
+.DocSearch-HitsFooter a {
+  border-bottom: 0px !important;
+}
+
+.DocSearch-Hit-title {
+  font-size: var(--body2-font-size) !important;
+}
+
+.DocSearch-Hit-path {
+  font-weight: 400 !important;
+  font-size: var(--caption-font-size) !important;
+}
+
+.DocSearch-Hit-content-wrapper {
+  line-height: inherit !important;
+
+}
+
+.DocSearch-Logo {
+  display: none;
+}
+
+a[aria-label="Search by Algolia"] {
+  display: none;
+}
+
+.searchResultsColumn_node_modules-\@docusaurus-theme-search-algolia-lib-theme-SearchPage-styles-module {
+  font-weight: 400 !important;
+  color: var(--text-caption-color);
+}
+
+.DocSearch-Hit-Container {
+  padding: 0px !important;
+  /* height: auto !important; */
+}
+
+.DocSearch-Hit[aria-selected=true] a {
+  background-color: var(--background-card-color) !important;
+
+}
+
+
+.DocSearch-Hit {
+  padding-bottom: var(--input-padding) !important;
 }
 
 /* General */

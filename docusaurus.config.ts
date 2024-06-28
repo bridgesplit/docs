@@ -175,8 +175,8 @@ const config: Config = {
       ]
     },
     algolia: {
-      appId: '696ZYCF4KU',
-      apiKey: 'd8e8aaab708583285d44b378848a2687',
+      appId: 'NE73VEETA1',
+      apiKey: '1116e1043b428ae3fa98b5cf1d9f239c',
       indexName: 'bridgesplit',
       searchParameters: {},
       searchPagePath: 'search',
