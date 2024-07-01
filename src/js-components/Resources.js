@@ -48,7 +48,7 @@ function Resource(resourceItem) {
                             <Image className={styles.resourceIcon} role="img" />
                             <div>
                                 <h4>{title}</h4>
-                                <p className={styles.resourceBody}>{description}</p>
+                                <p className={styles.cardBody}>{description}</p>
                             </div>
                         </div>
                     </div>

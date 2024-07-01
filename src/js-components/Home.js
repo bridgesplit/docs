@@ -1,9 +1,8 @@
 import clsx from 'clsx';
 import React from 'react';
-import Features from '@site/src/components/Features';
+import { Features, Resources } from '@site/src/js-components';
 import SearchBar from '@theme/SearchBar'
-import styles from './index.module.css';
-import Resources from '@site/src/components/Resources';
+import styles from './styles.module.css';
 
 function Header() {
   return (
@@ -21,7 +20,7 @@ function Header() {
 
 export default function Home() {
   return (
-    <main>
+    <main className="homeContainer">
       <Header />
       <Features />
       <div className={clsx("container")}>

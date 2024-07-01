@@ -57,11 +57,11 @@ function FeatureContent(featureItem) {
     <div className={clsx('card', disabled && 'disabled')}>
       <div className={clsx('card__body')}>
         <div className={clsx(styles.featureHeader)}>
-          <Icon role="img" />
+          <Icon className={clsx(styles.featureIcon)} role="img" />
           {disabled ? <Tag text="Coming Soon" /> : <OutwardArrowIcon className={clsx(styles.featureArrowIcon)} role="img" />}
         </div>
         <h3>{title}</h3>
-        <p className={clsx(styles.featureBody)}>{description}</p>
+        <p className={clsx(styles.cardBody)}>{description}</p>
       </div>
     </div >
   )
