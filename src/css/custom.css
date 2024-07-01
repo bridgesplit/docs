@@ -431,6 +431,8 @@ a>.card:hover {
 
 table {
   display: table;
+  width: 100%;
+  font-size: var(--body2-font-size);
 }
 
 table thead tr {
