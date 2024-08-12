@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Create a Passkey Wallet
+draft: true
 ---
 # Create a Passkey Wallet
 1. After signing up and joining the Closed Beta, you can connect a wallet or create a Passkey wallet at sign-up.

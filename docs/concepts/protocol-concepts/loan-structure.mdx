@@ -1,11 +1,14 @@
+---
+sidebar_position: 3
+---
 import { FixedTblCol } from "@site/src/js-components/inline";
 
-# Bilateral Loans
+# Loan Structure
 ## Introduction
-Bilateral loans form the foundation of the Bridgesplit Protocol, enabling direct lending and borrowing between users. Lenders can create loan offers and borrowers can create loan requests  with specific parameters such as interest rate, duration, and collateral requirements. When a matching counterparty accepts the offer or request, a bilateral loan is initialized, and funds are transferred between the parties. The collateral remains non-transferrable until the loan concludes, at which point it is returned to the borrower upon repayment or transferred to the lender in the event of a default.
+Direct loans form the foundation of the Loopscale Protocol, enabling direct lending and borrowing between users. Lenders can create loan offers and borrowers can create loan requests  with specific parameters such as interest rate, duration, and collateral requirements. When a matching counterparty accepts the offer or request, a bilateral loan is initialized, and funds are transferred between the parties. The collateral remains non-transferrable until the loan concludes, at which point it is returned to the borrower upon repayment or transferred to the lender in the event of a default.
 
 ## Offers and Requests
-Bilateral loans are formed when a loan offer and loan request, collectively known as orders, are matched. Orders define the terms of a loan, including payment frequency, interest rate, principal, duration, and fees. Once created, orders are listed on the Limit Creditbook (LCB) and matched by an on-chain matching engine. Borrowers and lenders can also directly accept active orders on the LCB.
+Loans are initiated when a loan offer and loan request, collectively known as orders, are matched. Orders define the terms of a loan, including payment frequency, interest rate, principal, duration, and fees. Once created, orders are listed on the Limit Creditbook (LCB) and matched by an on-chain matching engine. Borrowers and lenders can also directly accept active orders on the LCB.
 
 When a suitable offer and request are matched, or when a borrower or lender finds an acceptable order, the borrower can initiate the loan. The protocol automatically transfers the principal to the borrower and escrows the collateral.
 
@@ -16,7 +19,7 @@ When a suitable offer and request are matched, or when a borrower or lender find
 | **Principal** | The amount of principal being lent to the borrower. |
 | **Principal asset** | The currency of principal |
 | **Collateral** | The minimum amounts and mints of the collateral. |
-| **APR** | The annualized cost of funds over the loan term, expressed as a percentage. |
+| **APY** | The annualized cost of funds over the loan term, expressed as a percentage. |
 | **Duration** | The length of time of the loan contract. |
 | **Repayment frequency** | The frequency at which the borrower is required to make interest payments in a simple-interest loan. |
 | **Default type** | A loan's terms may include price-based defaults (defaulting when the loan's collateralization ratio reaches the liquidation threshold) and/or payment-based defaults (defaulting when a borrower misses a specified number of repayments). |
@@ -30,7 +33,7 @@ When a suitable offer and request are matched, or when a borrower or lender find
 |**Collateral pricing oracle** | An optionally defined custom pricing oracle to calculate collateral value  |
 
 ## Ledgers
-Initiating a loan automatically generates a repayment ledger based on the terms specified in the matched order. The ledger defines the repayment schedule and tracks repayments as they are made. The Bridgesplit Protocol uses this ledger to determine the current state of a loan.
+Initiating a loan automatically generates a repayment ledger based on the terms specified in the matched order. The ledger defines the repayment schedule and tracks repayments as they are made. The Loopscale Protocol uses this ledger to determine the current state of a loan.
 ## Defaults
 **Price-based defaults**: Similar to existing liquidation mechanics, a price-based default occurs when the value of collateral relative to the value of the principal falls below the liquidation threshold. This can happen at any point during the loan, and borrowers should monitor their health factor to ensure it doesn't get too close to zero. Borrowers can avoid liquidations by repaying principal and topping up collateral amounts.
 **Payment-based defaults**: Payment-based defaults result from a borrower missing scheduled payments in excess of the pre-determined max outstanding payments, including the maturity payment. 

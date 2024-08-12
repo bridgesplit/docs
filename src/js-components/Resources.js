@@ -7,7 +7,6 @@ import AppLogo from "@site/static/img/app_logo.svg";
 import AnalyticsIcon from "@site/static/img/icons/analytics.svg";
 import FeedbackIcon from "@site/static/img/icons/feedback.svg";
 
-
 const resourceItems = [
     {
         title: "Discord",
@@ -19,20 +18,20 @@ const resourceItems = [
         title: "Analytics",
         description: <>Explore metrics</>,
         Image: AnalyticsIcon,
-        slug: "https://dashboards.bridgesplit.com",
+        slug: "https://dashboards.loopscale.com",
     },
     {
         title: "Markets",
         description: <>Borrow and lend </>,
         Image: AppLogo,
-        slug: "https://app.bridgesplit.com"
+        slug: "https://app.loopscale.com"
 
     },
     {
         title: "Feedback",
         description: <>Submit requests</>,
         Image: FeedbackIcon,
-        slug: "https://bridgesplit.canny.io"
+        slug: "https://loopscale.canny.io"
     }
 ]
 

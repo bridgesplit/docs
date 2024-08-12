@@ -4,7 +4,7 @@ title: Health Factor & Defaults
 ---
 
 # Defaults
-If a loan defaults, the loan ends and the borrower loses ownership of the collateral, including excess collateral and early repayments. Loans on Bridgesplit Markets have two default mechanisms, price-based and payment-based.
+If a loan defaults, the loan ends and the borrower loses ownership of the collateral, including excess collateral and early repayments. Loans on Loopscale have two default mechanisms, price-based and payment-based.
 
 ## Price-Based Defaults
 Similar to liquidations on existing DeFi lending protocols, price-based defaults occur when a loan's health factor reaches 0. In other words, a price-based default occurs when the value of loan's collateral relative to the value of the debt falls below the liquidation threshold. This can happen at any point during the loan, and borrowers should monitor their health factor to avoid a price-based default. Borrowers can increase their health factor by repaying principal and topping up collateral amounts.

@@ -8,9 +8,9 @@ function Header() {
   return (
     <div className={clsx("container")}>
       <div className={clsx("col col--10 col--offset-1", styles.header)}>
-        <h1> Bridgesplit Docs</h1>
+        <h1>Loopscale Docs</h1>
         <p className={clsx(styles.subtitle)}>
-          Bridgesplit provides the borrow-lend infrastructure to unlock novel loan collateral and structures on more efficient, flexible capital markets.
+          Loopscale provides the borrow-lend infrastructure to unlock novel loan collateral and structures on more efficient, flexible capital markets.
         </p>
         <SearchBar />
       </div>

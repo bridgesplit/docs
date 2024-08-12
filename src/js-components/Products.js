@@ -12,19 +12,19 @@ import OutwardArrowIcon from '@site/static/img/icons/outward_arrow.svg'
 const productItems = [
 
     {
-        slug: "https://app.bridgesplit.com/issuers/staked_sol/",
+        slug: "https://app.loopscale.com/issuers/staked_sol/",
         imgPath: sol,
     },
     {
-        slug: "https://app.bridgesplit.com/issuers/orca/",
+        slug: "https://app.loopscale.com/issuers/orca/",
         imgPath: lp
     },
     {
-        slug: "https://app.bridgesplit.com/lend/USDC",
+        slug: "https://app.loopscale.com/lend/USDC",
         imgPath: earn
     },
     {
-        slug: "https://app.bridgesplit.com/markets/USDC",
+        slug: "https://app.loopscale.com/markets/USDC",
         imgPath: usdc
     },
 ]

@@ -5,12 +5,12 @@ import rehypeKatex from 'rehype-katex';
 import remarkMath from 'remark-math';
 
 const config: Config = {
-  title: 'Bridgesplit Docs',
-  tagline: 'Resources on the Bridgesplit Protocol, Markets, and more',
+  title: 'Loopscale Docs',
+  tagline: 'Resources on the Loopscale Protocol, Markets, and more',
   favicon: 'img/favicon.ico',
-  url: 'https://docs.bridgesplit.com',
+  url: 'https://docs.loopscale.com',
   baseUrl: '/',
-  organizationName: 'bridgesplit',
+  organizationName: 'loopscale',
   projectName: 'docs',
 
   onBrokenLinks: 'warn',
@@ -55,9 +55,9 @@ const config: Config = {
     },
 
     navbar: {
-      title: 'Bridgesplit Docs',
+      title: 'Loopscale Docs',
       logo: {
-        alt: 'Bridgesplit',
+        alt: 'Loopscale',
         src: 'img/docs_logo.svg',
       },
       items: [
@@ -82,13 +82,13 @@ const config: Config = {
         {
           type: 'html',
           position: 'right',
-          value: '<a class=" button button--outline " href="https://bridgesplit.canny.io" target="_blank">Feedback</a>',
+          value: '<a class=" button button--outline " href="https://loopscale.canny.io" target="_blank">Feedback</a>',
         },
 
         {
           type: 'html',
           position: 'right',
-          value: '<a class="button" href="https://app.bridgesplit.com" target="_blank">Launch App</a>',
+          value: '<a class="button" href="https://app.loopscale.com" target="_blank">Launch App</a>',
         },
         {
           type: 'search',
@@ -119,21 +119,21 @@ const config: Config = {
           title: 'Product',
           items: [{
             label: 'Borrow',
-            to: 'https://app.bridgesplit.com/borrow/USDC'
+            to: 'https://app.loopscale.com/borrow/USDC'
           },
           {
             label: 'Lend',
-            to: 'https://app.bridgesplit.com/lend/USDC'
+            to: 'https://app.loopscale.com/lend/USDC'
           },
 
           {
             label: 'Businesses',
-            to: 'https://www.bridgesplit.com/businesses'
+            to: 'https://www.loopscale.com/businesses'
           },
 
           {
             label: 'Build',
-            to: 'https://www.bridgesplit.com/developers'
+            to: 'https://www.loopscale.com/developers'
           },
           ]
         },
@@ -145,7 +145,7 @@ const config: Config = {
           },
           {
             label: 'Feedback',
-            to: 'https://bridgesplit.canny.io'
+            to: 'https://loopscale.canny.io'
           },
           {
             label: 'Support',
@@ -153,7 +153,7 @@ const config: Config = {
           },
           {
             label: 'Analytics',
-            to: 'https://dashboards.bridgesplit.com'
+            to: 'https://dashboards.loopscale.com'
           }
           ]
         },
@@ -161,14 +161,14 @@ const config: Config = {
           title: 'Company',
           items: [{
             label: 'About',
-            to: 'https://bridgesplit.com/about'
+            to: 'https://loopscale.com/about'
           }, {
             label: 'Careers',
-            to: 'https://careers.bridgesplit.com'
+            to: 'https://careers.loopscale.com'
           },
           {
             label: 'Blog',
-            to: 'https://bridgesplit.com/blog'
+            to: 'https://loopscale.com/blog'
           },
           ]
         }
@@ -177,7 +177,7 @@ const config: Config = {
     algolia: {
       appId: 'NE73VEETA1',
       apiKey: '1116e1043b428ae3fa98b5cf1d9f239c',
-      indexName: 'bridgesplit',
+      indexName: 'loopscale',
       searchParameters: {},
       searchPagePath: 'search',
       insights: false,

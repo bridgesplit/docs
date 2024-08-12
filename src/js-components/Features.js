@@ -12,11 +12,11 @@ import OpenBookIcon from '@site/static/img/icons/open_book.svg'
 
 const featureItems = [
   {
-    title: 'What is Bridgesplit',
+    title: 'What is Loopscale',
     Icon: InfoIcon,
     description: (
       <>
-        Learn about the core concepts of the Bridgesplit Protocol, Bridgesplit Markets, the Creditbook, and more.
+        Learn about the core concepts of the Loopscale Protocol, Loopscale Markets Application, the Creditbook, and more.
       </>
     ),
     slug: "/concepts/overview",
@@ -27,7 +27,7 @@ const featureItems = [
     Icon: OpenBookIcon,
     description: (
       <>
-        Learn how to get started borrowing and lending on Bridgesplit with easy-to-follow user guides.
+        Learn how to get started borrowing and lending on Loopscale with easy-to-follow user guides.
       </>
     ),
     slug: "/user-guides/create-an-account",
@@ -35,11 +35,11 @@ const featureItems = [
 
   },
   {
-    title: 'Bridgesplit Protocol',
+    title: 'Loopscale Protocol',
     Icon: CodeIcon,
     description: (
       <>
-        Learn about the architecture of the Bridgesplit Protocol smart contracts through guided examples.
+        Learn about the architecture of the Loopscale Protocol smart contracts through guided examples.
       </>
     ),
     slug: "/protocol",
