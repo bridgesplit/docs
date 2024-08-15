@@ -31,7 +31,7 @@ const featureItems = [
       </>
     ),
     slug: "/user-guides/create-an-account",
-    disabled: false
+    disabled: true
 
   },
   {

@@ -55,7 +55,7 @@ const config: Config = {
     },
 
     navbar: {
-      title: 'Loopscale Docs',
+      title: 'Docs',
       logo: {
         alt: 'Loopscale',
         src: 'img/docs_logo.svg',
@@ -68,27 +68,25 @@ const config: Config = {
           label: 'Concepts',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'userGuides',
+          type: 'html',
           position: 'left',
-          label: 'Guides',
+          value: '<div class="navbar__link-disabled">Guides<span class="navbar__tooltip">Coming Soon</span></div>',
         },
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'protocol',
-        //   position: 'left',
-        //   label: 'Protocol',
-        // },
+        {
+          type: 'html',
+          position: 'left',
+          value: '<div class="navbar__link-disabled">Protocol<span class="navbar__tooltip">Coming Soon</span></div>',
+        },
         {
           type: 'html',
           position: 'right',
-          value: '<a class=" button button--outline " href="https://loopscale.canny.io" target="_blank">Feedback</a>',
+          value: '<a class=" button button--outline " href="https://feedback.loopscale.com" target="_blank">Feedback</a>',
         },
 
         {
           type: 'html',
           position: 'right',
-          value: '<a class="button" href="https://app.loopscale.com" target="_blank">Launch App</a>',
+          value: '<a class="button button--contained" href="https://app.loopscale.com" target="_blank">Launch App</a>',
         },
         {
           type: 'search',
@@ -98,63 +96,90 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+
+      logo: {
+        src: 'img/docs_logo.svg',
+        href: 'https://loopscale.com',
+        width: 160,
+        height: 51,
+      },
       links: [
-        {
-          title: "Docs",
-          items: [{
-            label: 'Concepts',
-            to: 'concepts/overview'
-          },
-          {
-            label: 'Guides',
-            to: '/user-guides/create-an-account',
-          },
-            // {
-            //   label: 'Protocol',
-            //   to: 'protocol/'
-            // },
-          ]
-        },
-        {
-          title: 'Product',
-          items: [{
-            label: 'Borrow',
-            to: 'https://app.loopscale.com/borrow/USDC'
-          },
-          {
-            label: 'Lend',
-            to: 'https://app.loopscale.com/lend/USDC'
-          },
+        // {
+        //   title: "Docs",
+        //   items: [{
+        //     label: 'Concepts',
+        //     to: 'concepts/overview'
+        //   },
+        //   {
+        //     label: 'Guides',
+        //     to: '/user-guides/create-an-account',
+        //   },
+        //     // {
+        //     //   label: 'Protocol',
+        //     //   to: 'protocol/'
+        //     // },
+        //   ]
+        // },
+        // {
+        //   title: 'Product',
+        //   items: [{
+        //     label: 'Borrow',
+        //     to: 'https://app.loopscale.com/borrow/USDC'
+        //   },
+        //   {
+        //     label: 'Lend',
+        //     to: 'https://app.loopscale.com/lend/USDC'
+        //   },
 
-          {
-            label: 'Businesses',
-            to: 'https://www.loopscale.com/businesses'
-          },
+        //   {
+        //     label: 'Businesses',
+        //     to: 'https://www.loopscale.com/businesses'
+        //   },
 
-          {
-            label: 'Build',
-            to: 'https://www.loopscale.com/developers'
-          },
-          ]
-        },
+        //   {
+        //     label: 'Build',
+        //     to: 'https://www.loopscale.com/developers'
+        //   },
+        //   ]
+        // },
+        // {
+        //   title: 'Resources',
+        //   items: [{
+        //     label: 'Docs',
+        //     to: '/'
+        //   },
+        //   {
+        //     label: 'Feedback',
+        //     to: 'https://loopscale.canny.io'
+        //   },
+        //   {
+        //     label: 'Support',
+        //     to: 'https://discord.com/channels/895116209958297631/932703647236771850'
+        //   },
+        //   // {
+        //   //   label: 'Analytics',
+        //   //   to: 'https://dashboards.loopscale.com'
+        //   // }
+        //   ]
+        // },
         {
-          title: 'Resources',
+          title: 'Ecosystem',
           items: [{
-            label: 'Docs',
-            to: '/'
+            label: 'App',
+            to: 'https://app.loopscale.com'
+          },
+          {
+            label: 'Discord',
+            to: 'https://discord.gg/loopscale'
           },
           {
             label: 'Feedback',
-            to: 'https://loopscale.canny.io'
+            to: 'https://feedback.loopscale.com'
           },
           {
             label: 'Support',
             to: 'https://discord.com/channels/895116209958297631/932703647236771850'
           },
-          {
-            label: 'Analytics',
-            to: 'https://dashboards.loopscale.com'
-          }
           ]
         },
         {

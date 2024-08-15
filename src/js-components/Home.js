@@ -7,10 +7,10 @@ import styles from './styles.module.css';
 function Header() {
   return (
     <div className={clsx("container")}>
-      <div className={clsx("col col--10 col--offset-1", styles.header)}>
+      <div className={clsx("col col--8 col--offset-2", styles.header)}>
         <h1>Loopscale Docs</h1>
         <p className={clsx(styles.subtitle)}>
-          Loopscale provides the borrow-lend infrastructure to unlock novel loan collateral and structures on more efficient, flexible capital markets.
+          Loopscale provides market-driven, modular credit infrastructure for the next generation of capital markets.
         </p>
         <SearchBar />
       </div>
@@ -21,12 +21,15 @@ function Header() {
 export default function Home() {
   return (
     <main className="homeContainer">
-      <Header />
-      <Features />
-      <div className={clsx("container")}>
+      <div className={clsx(styles.homeContainer)}>
+
+        <Header />
+        <Features />
+      </div>
+      {/* <div className={clsx("container")}>
         <hr />
       </div>
-      <Resources />
+      <Resources /> */}
     </main >
   );
 }

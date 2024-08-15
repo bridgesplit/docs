@@ -1,12 +1,12 @@
 .subtitle {
   font-size: var(--h3-font-size);
+  color: var(--text-caption-color);
 }
 
 .header {
   text-align: center;
+
 }
-
-
 
 .featureHeader {
   height: 24px;
@@ -17,7 +17,7 @@
 }
 
 .cardBody {
-  font-size: var(--body2-font-size);
+  font-size: var(--body1-font-size);
   color: var(--text-caption-color)
 }
 

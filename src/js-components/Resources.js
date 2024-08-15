@@ -9,24 +9,25 @@ import FeedbackIcon from "@site/static/img/icons/feedback.svg";
 
 const resourceItems = [
     {
-        title: "Discord",
-        description: <>Join community</>,
-        Image: DiscordLogo,
-        slug: "https://discord.com/invite/A9xnqqzACF"
-    },
-    {
-        title: "Analytics",
-        description: <>Explore metrics</>,
-        Image: AnalyticsIcon,
-        slug: "https://dashboards.loopscale.com",
-    },
-    {
         title: "Markets",
         description: <>Borrow and lend </>,
         Image: AppLogo,
         slug: "https://app.loopscale.com"
 
     },
+    {
+        title: "Discord",
+        description: <>Join community</>,
+        Image: DiscordLogo,
+        slug: "https://discord.com/invite/A9xnqqzACF"
+    },
+    // {
+    //     title: "Analytics",
+    //     description: <>Explore metrics</>,
+    //     Image: AnalyticsIcon,
+    //     slug: "https://dashboards.loopscale.com",
+    // },
+
     {
         title: "Feedback",
         description: <>Submit requests</>,
@@ -39,7 +40,7 @@ const resourceItems = [
 function Resource(resourceItem) {
     const { title, Image, slug, description } = resourceItem;
     return (
-        <div className={clsx('col col--6 ')}>
+        <div className={clsx('col col--4 ')}>
             <a target="_blank" href={slug}>
                 <div className={clsx('card', styles.resource)}>
                     <div className={clsx('card__body')}>
@@ -63,12 +64,7 @@ export default function Resources() {
             <div className={clsx("container", styles.resourcesContainer)}>
                 <h3>More ways to explore</h3>
                 <div className="row">
-                    {resourceItems.slice(0, 2).map((props, idx) => (
-                        <Resource key={idx} {...props} />
-                    ))}
-                </div>
-                <div className="row">
-                    {resourceItems.slice(2, 5).map((props, idx) => (
+                    {resourceItems.map((props, idx) => (
                         <Resource key={idx} {...props} />
                     ))}
                 </div>
