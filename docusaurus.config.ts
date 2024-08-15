@@ -80,7 +80,7 @@ const config: Config = {
         {
           type: 'html',
           position: 'right',
-          value: '<a class=" button button--outline " href="https://feedback.loopscale.com" target="_blank">Feedback</a>',
+          value: '<a class=" button button--outline " href="http://feedback.loopscale.com" target="_blank">Feedback</a>',
         },
 
         {
@@ -174,7 +174,7 @@ const config: Config = {
           },
           {
             label: 'Feedback',
-            to: 'https://feedback.loopscale.com'
+            to: 'http://feedback.loopscale.com'
           },
           {
             label: 'Support',
