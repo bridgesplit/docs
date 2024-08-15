@@ -193,7 +193,7 @@ const config: Config = {
           },
           {
             label: 'Blog',
-            to: 'https://loopscale.com/blog'
+            to: 'https://blog.loopscale.com'
           },
           ]
         }
