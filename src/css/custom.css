@@ -1,21 +1,33 @@
+@font-face {
+  font-family: "Neue Montreal Regular";
+  src: local("NeueMontrealRegular"),
+    url("../../static/fonts/NeueMontrealRegular.ttf") format("truetype"),
+}
+
+@font-face {
+  font-family: "Neue Montreal Medium";
+  src: local("NeueMontrealMedium"),
+    url("../../static/fonts/NeueMontrealMedium.ttf") format("truetype"),
+}
+
 [data-theme=dark]:root,
 html[data-theme=dark] {
   /* Base */
   --primary-color: rgba(255, 255, 255, 0.95);
-  --primary-background-color: rgba(255, 255, 255, 0.1);
-  --primary-background-color-light: rgba(255, 255, 255, 0.05);
-  --secondary-color: rgb(124, 91, 255);
+  --primary-background-color: rgba(255, 255, 255, 0.10);
+  --primary-background-color-light: rgb(13, 13, 13);
+  --secondary-color: rgb(57, 78, 255);
   --secondary-background-color: rgb(124, 91, 255, 0.2);
 
   --text-body-color: rgba(255, 255, 255, 0.95);
   --text-caption-color: rgba(255, 255, 255, 0.60);
   --text-disabled-color: rgba(255, 255, 255, 0.40);
   --text-button-primary-color: rgba(21, 13, 53, 0.95);
-  --background-color: rgb(19, 18, 33);
-  --background-card-color: rgba(255, 255, 255, 0.05);
-  --divider-color: rgba(255, 255, 255, 0.05);
-  --divider-color-dark: rgba(255, 255, 255, 0.20);
-  --border-radius: 5px;
+  --background-color: rgb(0, 0, 0);
+  --background-card-color: var(--primary-background-color-light);
+  --divider-color: rgba(255, 255, 255, 0.07);
+  --divider-color-dark: rgba(255, 255, 255, 0.14);
+  --border-radius: 4px;
   --body1-font-size: 16px;
   --body2-font-size: 14px;
   --caption-font-size: 12px;
@@ -23,7 +35,7 @@ html[data-theme=dark] {
   --h2-font-size: 24px;
   --h3-font-size: 20px;
   --h4-font-size: 16px;
-  --font-family: "Helvetica Neue",
+  --font-family: "Neue Montreal", "Helvetica Neue",
     Helvetica, Arial, "Lucida Grande", sans-serif;
   --heading-font-wt: 500;
   --card-padding: 20px;
@@ -95,12 +107,21 @@ html[data-theme=dark] {
       var(--ifm-color-emphasis-100) 100%);
 }
 
+.homeContainer {
+  height: calc(100vh -70px) !important;
+
+}
+
+
 main:has(.homeContainer) {
   /* background-color: red; */
 
-  background-image: url('../../static/img/home-bg-1.png');
-  background-size: 100% auto;
+
+  background-image: url('../../static/img/home-bg.svg');
+  background-size: auto 60%;
   background-repeat: no-repeat;
+  background-clip: border-box;
+  background-position: 40% -60%;
 }
 
 .DocSearch-Hit-source {
@@ -257,9 +278,15 @@ p a {
   align-items: center !important;
   display: flex !important;
   font-size: var(--ifm-font-size-base);
-  background-color: var(--primary-background-color-light) !important;
+  background-color: var(--primary-background-color) !important;
   color: var(--text-body-color) !important;
   border: none !important;
+}
+
+.button--contained {
+  background-color: var(--primary-color) !important;
+  color: var(--text-button-primary-color) !important;
+
 }
 
 .button--outline {
@@ -277,7 +304,8 @@ p a {
 }
 
 .navbar__logo {
-  height: 1.5rem;
+  height: 1.25rem;
+
 }
 
 .navbar__toggle>svg {
@@ -293,9 +321,44 @@ p a {
   font-weight: 400;
 }
 
+
+
+.navbar__tooltip {
+  visibility: hidden;
+  background-color: var(--background-card-color);
+  color: var(--text-caption-color);
+  font-size: var(--caption-font-size);
+  border-radius: 4px;
+  padding: 4px 8px;
+  position: absolute;
+  width: max-content;
+  z-index: 1;
+  top: 100%;
+  left: -25%;
+
+}
+
+/* Tooltip text */
+.navbar__link-disabled {
+  position: relative;
+  color: var(--text-disabled-color);
+  cursor: pointer;
+
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.navbar__link-disabled:hover .navbar__tooltip {
+  visibility: visible;
+}
+
+
+
+
 .navbar__brand,
 .navbar__brand:hover {
   color: var(--text-body-color);
+  align-items: center;
+
 }
 
 /* Footer */
@@ -310,6 +373,19 @@ p a {
 
 }
 
+footer>.container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: top;
+}
+
+
+
+.footer__logo {
+  margin-top: 0px !important;
+}
+
 /* Sidebar */
 html[data-theme='dark'] .menu__caret:before,
 html[data-theme='dark'] .menu__link--sublist-caret:after {
@@ -320,7 +396,7 @@ html[data-theme='dark'] .menu__link--sublist-caret:after {
 
 .menu {
   padding: 1.5rem 1rem !important;
-  font-size: var(--body2-font-size) !important;
+  font-size: var(--body1-font-size) !important;
   font-weight: 400 !important;
 }
 
