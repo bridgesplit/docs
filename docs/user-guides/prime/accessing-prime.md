@@ -2,7 +2,6 @@
 sidebar_position: 1
 title: Accessing Prime
 unlisted: true
-displayed_sidebar: null
 ---
 To access Prime, you must have an account linked to an email. Once you have an email account, you can apply to Prime on the Loopscale Prime page.
 
