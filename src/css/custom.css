@@ -112,6 +112,9 @@ html[data-theme=dark] {
 
 }
 
+.theme-unlisted-banner {
+  display: none;
+}
 
 main:has(.homeContainer) {
   /* background-color: red; */
