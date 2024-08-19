@@ -20,11 +20,11 @@ const productItems = [
         imgPath: lp
     },
     {
-        slug: "https://app.loopscale.com/lend/USDC",
+        slug: "https://app.loopscale.com/market/USDC/?role=lend",
         imgPath: earn
     },
     {
-        slug: "https://app.loopscale.com/markets/USDC",
+        slug: "https://app.loopscale.com/market/USDC",
         imgPath: usdc
     },
 ]

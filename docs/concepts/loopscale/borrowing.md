@@ -13,7 +13,7 @@ The borrower's receives funds at the lowest rate on the market and the collatera
 1. The loan has not been fully repaid by the due date (Payment-Based Default)
 2. The loan's health factor falls below 0% (Price-Based Default)
 
-To learn more about defaults and how health factor is calculated, see [Loan Health & Defaults](health-factor-and-defaults.md).
+To learn more about defaults and how health factor is calculated, see [Loan Health & Defaults](/concepts/loopscale/loan-health-management).
 
 A borrower has two ways to improve a loan's health factor: (1) topping up collateral (2) repaying a loan or portion of a loan early. 
 

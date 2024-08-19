@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 # Asset Parameters
-Borrowers and lenders on Loopscale interact via virtualized Limit Creditbooks with standardized terms including principal and collateral options, principal and collateral oracles, and loan terms. These standardized terms are available below. More information on terms and how they affect a loan is available in [Protocol Concepts](/concepts/bridgesplit-markets/asset-parameters).
+Borrowers and lenders on Loopscale interact via virtualized Limit Creditbooks with standardized terms including principal and collateral options, principal and collateral oracles, and loan terms. These standardized terms are available below. More information on terms and how they affect a loan is available in [Protocol Concepts](/concepts/loopscale/asset-parameters).
 
 ### Available Durations
 - 1 day
