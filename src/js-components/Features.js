@@ -19,7 +19,7 @@ const featureItems = [
         Learn about the core concepts of the Loopscale Protocol, Loopscale Markets Application, the Creditbook, and more.
       </>
     ),
-    slug: "/concepts/overview",
+    slug: "/concepts",
     disabled: false
   },
   {
