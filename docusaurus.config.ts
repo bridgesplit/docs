@@ -6,7 +6,7 @@ import remarkMath from 'remark-math';
 
 const config: Config = {
   title: 'Loopscale Docs',
-  tagline: 'Resources on the Loopscale Protocol, Markets, and more',
+  tagline: 'oopscale is a new way to lend and borrow onchain. The best rates with any asset and less risk.',
   favicon: 'img/favicon.ico',
   url: 'https://docs.loopscale.com',
   baseUrl: '/',
