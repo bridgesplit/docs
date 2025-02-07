@@ -6,7 +6,7 @@ import remarkMath from 'remark-math';
 
 const config: Config = {
   title: 'Loopscale Docs',
-  tagline: 'Resources on the Loopscale Protocol, Markets, and more',
+  tagline: 'Loopscale is a new way to lend and borrow onchain. The best rates with any asset and less risk.',
   favicon: 'img/favicon.ico',
   url: 'https://docs.loopscale.com',
   baseUrl: '/',
@@ -61,6 +61,8 @@ const config: Config = {
         src: 'img/docs_logo.svg',
       },
       items: [
+        //The below commented block can be uncommented to restore the categorization in the top navbar
+        /*
         {
           type: 'docSidebar',
           sidebarId: 'concepts',
@@ -77,10 +79,11 @@ const config: Config = {
           position: 'left',
           value: '<div class="navbar__link-disabled">Protocol<span class="navbar__tooltip">Coming Soon</span></div>',
         },
+        */
         {
           type: 'html',
           position: 'right',
-          value: '<a class=" button button--outline " href="http://feedback.loopscale.com" target="_blank">Feedback</a>',
+          value: '<a class=" button button--outline " href="https://loopscale.canny.io" target="_blank">Feedback</a>',
         },
 
         {
@@ -116,7 +119,7 @@ const config: Config = {
           },
           {
             label: 'Feedback',
-            to: 'http://feedback.loopscale.com'
+            to: 'https://loopscale.canny.io/'
           },
           {
             label: 'Support',
