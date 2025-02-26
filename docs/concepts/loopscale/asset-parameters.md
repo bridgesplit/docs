@@ -10,10 +10,6 @@ Borrowers and lenders on Loopscale interact via virtualized Limit Creditbooks wi
 - 1 month
 - 3 months
 
-### Fees
-To compensate lenders for an unused portion of a loan duration, borrowers are partial interest on any early repaid principal, expressed as a percentage of the original interest expected for the repaid principal.
-
-**Early Repayment Penalty**: 50% of forgone interest
 
 ## Principal
 The following assets are eligible to be used as principal on Loopscale's vLCBs.

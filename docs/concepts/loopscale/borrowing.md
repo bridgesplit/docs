@@ -24,20 +24,8 @@ A borrower may deposit additional collateral for a loan, increasing the collater
 You can partially or fully repay a loan at any point. You only owe interest on loan value you have outstanding. So if you repay early, you won’t owe interest for the remaining time on the principal repaid. If you repay early, you will incur a fee that is proportional to the interest saved. This is to compensate the lender for locking their capital up and discourage long capital reservations without reason.
 
 ### Early Repayment
-A borrower may repay a loan in full before the loan due date. Upon repayment, the loan will end and the collateral will be returned to the borrower. 
+A borrower may repay a loan in full before the loan due date. Upon repayment, the loan will end and the collateral will be returned to the borrower. A borrower may also partially repay a loan early, decreasing the loan value and increasing the health factor. Upon early repayment, interest accrued up until that point is paid.
 
-A borrower may also partially repay a loan early, decreasing the loan value and increasing the health factor. 
-
-#### Prepayment Penalty
-Borrowers must pay 40% of the original interest for the unused time of a loan. In other words, interest is reduced by 60% for any early repaid loan amount.
-
-To illustrate the prepayment penalty, consider the following example:
-1. The total interest due for 1-day, 40,000 USDC loan is 20 USDC (18.25% APY)
-2. A borrower repays 10,000 USDC after 12 hours
-3. After the full day has passed, borrower's total *interest* owed has three parts, for a total of 18.5 USDC (vs. 20 USDC):
-    1. 18.25% APY on 40,000 USDC for the first 12 hours -> 10 USDC
-    2. 18.25% APY on 30,000 USDC for the second 12 hours -> 7.5 USDC
-    3. 40% of 18.25% APY on 10,000 USDC for the second 12 hours -> 1 USDC
 
 ## Refinancing
 One of the more powerful concepts for borrowers on Loopscale is the refinance. Refinancing is the process of repaying one outstanding loan by atomically starting another. The original lender is paid off and a new loan is started. 
