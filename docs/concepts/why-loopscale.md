@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Why Loopscale?
 
-Before exploring Loopscale's new primitives and advantages, let's understand how traditional, pool-based lending protocols work and their limitations.
+Before exploring Loopscale's advantages and new primitives, let's understand how traditional, pool-based lending protocols work as well as their limitations.
 
 ## The problem with pool-based lending
 In the first generation of DeFi lending protocols, the borrowing interest rate is determined by the utilization of the asset. This model is known as a pool- or utilization-based model. As illustrated in the chart below, when utilization increases, borrowing is discouraged and supplying is encouraged. This design decision was made to maintain excess liquidity for withdrawals.

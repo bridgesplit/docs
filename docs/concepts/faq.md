@@ -50,25 +50,4 @@ Interest earned up to that point is retained, with a small adjustment if the rat
 ### How do I get support?
 Support is available through the [Loopscale Discord](https://discord.gg/loopscale) by opening a support ticket. For issues related to using the platform, including a wallet address in the initial message allows the team to provide assistance more quickly.
 
-### How do points work?
-Points are earned through active participation in the protocol, including:
-- Lending assets
-- Borrowing assets
-- Yield Loops
-- Referring new users (you will receive a portion of referred users' points)
-- Participating in select promotions (see the [Rewards page of the app](https://app.loopscale.com/rewards).
-
-### How many points do users get?
-Users earn 0.0002 points per dollar value lent, borrowed, or looped per day, before multipliers.
-
-Different assets and actions (i.e. borrowing vs. lending) may have different multipliers. On the Loopscale App, hovering over the blue icon next to Lend or Borrow APYs in the asset list displays the specific multipliers.
-
-### Do users earn points on idle liquidity?
-Yes, points are earned on supplied assets even when they aren't actively being borrowed. This rewards providing market depth and supporting overall liquidity.
-
-### How do points from other protocols function within Loopscale?
-Points can also be earned from other integrated protocols, indicated by the protocol's logo displayed alongside the blue points icon in the assets list on looping and borrowing pages.
-
-The Optimized Yield functionality automatically allocates unutilized lent capital to marginfi pools until matched with a borrower, providing marginfi points in this instance.
-
-These external protocols maintain responsibility for offering and managing their own points systems. Loopscale does not hold or disburse points from these external protocols.
+y for offering and managing their own points systems. Loopscale does not hold or disburse points from these external protocols.

@@ -14,6 +14,8 @@ The list of available borrow assets, collateral assets, and loan duration option
 The borrower receives funds at the lowest rate on the market and the collateral is escrowed. The collateral is returned to the borrower once the borrowed funds and accrued interest have been fully repaid.
 
 A borrower will default, losing their collateral the loan's health factor falls below 0%. To learn more about defaults and how health factor is calculated, see Loan Health & Defaults. TODO: add link here
+
 ## Quick borrow
+
 
 ## Advanced borrow

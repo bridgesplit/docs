@@ -2,7 +2,15 @@
 sidebar_position: 1
 ---
 
+
+
+
 # Lending Assets
+
+
+
+## hi
+
 Lending on Loopscale allows users to earn interest on their digital assets. Unlike pool-based protocols where assets are supplied to a liquidity pool, lending on Loopscale operates on the order book model. Users effectively create a limit order on the Loopscale Credit Order Book; this order 
 
 There are two ways to lend on Loopscale:
