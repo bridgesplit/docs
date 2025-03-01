@@ -16,6 +16,22 @@
   margin-bottom: var(--ifm-card-vertical-spacing);
 }
 
+.advantageHeader {
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--text-caption-color);
+  margin-bottom: var(--ifm-card-vertical-spacing);
+}
+
+.advantageIcon {
+  height: 32px;
+  width: 32px;
+  padding-right: 10px;
+}
+
 .cardBody {
   font-size: var(--body1-font-size);
   color: var(--text-caption-color)
