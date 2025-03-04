@@ -24,4 +24,5 @@ The Optimized Yield functionality automatically allocates unutilized lent capita
 
 These external protocols maintain responsibilit
 
-### How referrals work
+### Referrals
+Share your referral link (found on the app's [Rewards](https://app.loopscale.com/rewards) page) with others to earn additional points equal to 5% of how many points your referred user(s) earn.

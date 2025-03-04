@@ -17,5 +17,15 @@ A borrower will default, losing their collateral the loan's health factor falls 
 
 ## Quick borrow
 
+The easiest way to borrow on Loopscale is to go to the [Borrow](https://app.loopscale.com/borrow) and click "Borrow" next to the token you wish to borrow. Then:
+
+1. Choose your collateral and its amount
+2. Select how safe or aggressive you wish to be with your LTV (click "Show more" to see more stats like health and liquidation price)
+3. Click "Borrow" to open up a borrow position. Through this interface, Loopscale borrows at a 24 hour fixed rate.
 
 ## Advanced borrow
+
+By instead clicking "View market" next to a token on the [Borrow](https://app.loopscale.com/borrow) page, users can access a more advanced borrow interface.
+
+In this interface, users can select their fixed rate period. Longer fixed rates mean more stability, but can command a higher rate as a result. 
+

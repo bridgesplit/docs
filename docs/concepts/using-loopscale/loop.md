@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 
 
-# Loop
+# Loops
 
 Yield Loops are a structured product offering access to leveraged yield strategies. They enable users to multiply returns from yield-bearing assets.
 
