@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Lend Position Management
+# Managing Lending Positions
 
 ## Deposit
 
@@ -20,3 +20,4 @@ In the event of a default, liquidators will be able to purchase the collateral a
 ## Halting New Loans
 If a lender wishes to stop new loans from being originated from their strategy, they can turn off new origination in strategy settings.
 
+## Closing a strategy and reclaiming rent

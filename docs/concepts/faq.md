@@ -1,5 +1,5 @@
 ---
-sidebar_position: 11
+sidebar_position: 8
 draft: false
 ---
 
@@ -32,6 +32,9 @@ The core protocol underwent an audit in 2024, and a newer, more comprehensive au
 No token or airdrop plans have been announced. Users should be vigilant against scams. **Anyone claiming to offer a Loopscale token or airdrop is not legitimate**.
 
 ## Using Loopscale
+
+### Why do I need to spend extra SOL to open a lending position or loop?
+<!-- TODO: rent explanation -->
 
 ### How do fixed-rate loans work on Loopscale?
 Fixed-rate loans on Loopscale maintain the same interest rate through a fixed term (e.g. 1 day, 1 week, 1 month, or 3 months). Unlike variable rate options common in traditional DeFi lending pools, there is no variable rate volatility for loans on Loopscale.

@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Rewards
+# Points
 
 Users can earn rewards in the form of points earned through various interactions with the protocol. These points serve as a way to incentivize active participation and engagement with the Loopscale. Informationi on points and affiliated activities can be checked on the [Rewards](https://app.loopscale.com/rewards) page of the Loopscale App.
 

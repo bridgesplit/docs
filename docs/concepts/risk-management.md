@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 ---
 # Risk Management
 When using Loopscale, it's important to understand and manage the financial and operational risks involved. This page outlines key risks to consider and provides guidance on mitigating them. Some of these risks apply only to borrowers or only to lenders.
