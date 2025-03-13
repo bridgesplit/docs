@@ -56,5 +56,3 @@ Interest earned up to that point is retained, with a small adjustment if the rat
 
 ### How do I get support?
 Support is available through the [Loopscale Discord](https://discord.gg/loopscale) by opening a support ticket. For issues related to using the platform, including a wallet address in the initial message allows the team to provide assistance more quickly.
-
-y for offering and managing their own points systems. Loopscale does not hold or disburse points from these external protocols.
