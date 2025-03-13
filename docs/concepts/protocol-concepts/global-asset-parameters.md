@@ -1,10 +1,10 @@
 ---
 sidebar_position: 8
 ---
-`
+
 # Asset Parameters
-`
-Borrowers and lenders on Loopscale interact via virtualized [Credit Order Book](/concepts/protocol-concepts/credit-order-book) with standardized terms including principal and collateral options, principal and collateral oracles, and loan terms. These standardized terms are available below.
+
+Borrowers and lenders on Loopscale interact via the virtualized [Credit Order Book](/concepts/protocol-concepts/credit-order-book) with standardized terms including principal and collateral options, principal and collateral oracles, and loan terms. These standardized terms are available below.
 
 ## Duration
 

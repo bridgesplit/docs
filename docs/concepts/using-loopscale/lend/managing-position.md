@@ -23,14 +23,14 @@ Users can withdraw from the loan early, collecting partial interest, by selling 
 
 This can be accomplished by going to the position, clicking "More," selecting "View Loans", and withdrawing early from the active loan or loans on this page.
 
-## Capital Management
+## Capital management
 Capital will be taken from the strategy to start new loans. Once capital is deployed to a loan, it is locked up for the length of the loan unless the borrower repays it early
 
 ## Defaults
-In the event of a default, liquidators will be able to purchase the collateral automatically at a value equal to the loan amount you’re owed and the funds will automatically be recycled into your strategy. If you you prefer to seize the collateral directly, you can turn off auto-liquidations in your strategy settings and take possession of the collateral directly.
+In the event of a default, liquidators will be able to purchase the collateral automatically at a value equal to the loan amount you’re owed and the funds will automatically be returned to your lending position. If you prefer to seize the collateral directly, you can turn off auto-liquidations in your strategy settings and take possession of the collateral instead in the event of a liquidation.
 
-## Halting New Loans
-If a lender wishes to stop new loans from being originated from their strategy, they can turn off new origination in strategy settings.
+## Halting new loans
+If a lender wishes to stop new loans from being originated from their lending position, they can turn off new origination in strategy settings. This will result in funds remaining within the lending position, but they will not continue to be utilized after the current loan period ends.
 
 ## Closing a position and reclaiming rent
 Even after withdrawing all funds, a _position_ remains open so that rent does not need to be repaid if the position is reopened. You can close this position fully and receive back your rent SOL by clicking "More" and selecting "Delete position."

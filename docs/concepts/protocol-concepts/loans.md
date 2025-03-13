@@ -1,19 +1,55 @@
 ---
 sidebar_position: 2
 ---
+import { FixedTblCol } from "@site/src/js-components/inline";
 
 # Loans
-A loan is created when a Lend Order matches with a compatible Borrow Order on the Credit Order Book. These orders specify terms of the requested loan, including:
+
+## Introduction
+Direct loans form the foundation of the Loopscale Protocol, enabling direct lending and borrowing between users. Lenders can create loan offers and borrowers can create loan requests  with specific parameters such as interest rate, duration, and collateral requirements. When a matching counterparty accepts the offer or request, a bilateral loan is initialized, and funds are transferred between the parties. The collateral remains non-transferrable until the loan concludes, at which point it is returned to the borrower upon repayment or transferred to the lender in the event of a default.
+
+A loan is created when a Lend Order matches with a compatible Borrow Order on the [Credit Order Book](/concepts/protocol-concepts/credit-order-book). 
+
+## Orders
+To create a more familiar experience for DeFi users, lenders place Lend Limit Orders and borrowers place Market Orders that match to the best priced Lending Limit Order. An order specifies terms of the requested loan, including:
 - Principal (Asset, Max Amount)
 - Collateral (Asset, Amount)
 - Terms (Interest Rate, Repayment Schedule)
-- Default Condition (Principal Oracle, Collateral Oracle, or Liquidiation LTV)
+- Default Condition (Principal Oracle, Collateral Oracle, or Liquidation LTV)
 
+## Offers and Requests
+Loans are initiated when a loan offer and loan request, collectively known as orders, are matched. Orders define the terms of a loan, including payment frequency, interest rate, principal, duration, and fees. Once created, orders are listed on the Limit Creditbook (LCB) and matched by an on-chain matching engine. Borrowers and lenders can also directly accept active orders on the LCB.
 
-## Orders
-To create a more familiar experience for DeFi users, the Loopscale App exposes only a subset of user creation flows.
-1. To allow for instant liquidity, lenders place Lend Limit Orders (in the form of Smart Orders) and borrowers place Market Orders that match to the best priced Lending Limit Order.
-2. To concentrate liquidity in the most popular markets, Smart Orders are restricted to Virtual Markets
+When a suitable offer and request are matched, or when a borrower or lender finds an acceptable order, the borrower can initiate the loan. The protocol automatically transfers the principal to the borrower and escrows the collateral.
 
-## Segregated Collateral
-Collateral is held in Segregated Accounts, allowing users to actively manage their assets while they're being used as collateral (assuming the collateral remains eligible and healthy). For example, users can modify a liquidity position that's being used as collateral.
+## Terms
+Below are all possible terms for a Loan via the Loopscale protocol. Note that not all of these terms are currently in use with the Loopscale App; but they do all exist within the protocol for current and future use cases.
+
+## Ledgers
+Initiating a loan automatically generates a repayment ledger based on the terms specified in the matched order. The ledger defines the repayment schedule and tracks repayments as they are made. The Loopscale Protocol uses this ledger to determine the current state of a loan.
+
+## Defaults
+**Price-based defaults**: Similar to existing liquidation mechanics, a price-based default occurs when the value of collateral relative to the value of the principal falls below the liquidation threshold. This can happen at any point during the loan, and borrowers should monitor their health factor to ensure it doesn't get too close to zero. Borrowers can avoid liquidations by repaying principal and topping up collateral amounts.
+
+### Oracle Agnostic Pricing
+Borrowers can set up loans that price their collateral or principal using custom or arbitrary oracles, enabling pricing for assets that may be illiquid or lack third-party oracle support. Loans may also be oracle-less, with borrowers proposing terms that solely default based on missed payments or loan expiry.
+
+| <FixedTblCol text="Term"/> | Description  |
+|:---|:---|
+| **Repayment type** | Simple-Interest loans have periodic interest payments with a final principal payment at maturity and Zero-Coupon loans have a single repayment that includes all interest and principal at maturity. |
+| **Principal** | The amount of principal being lent to the borrower. |
+| **Principal asset** | The currency of principal |
+| **Collateral** | The minimum amounts and mints of the collateral. |
+| **APY** | The annualized cost of funds over the loan term, expressed as a percentage. |
+| **Duration** | The length of time of the loan contract. |
+| **Repayment frequency** | The frequency at which the borrower is required to make interest payments in a simple-interest loan. |
+| **Default type** | A loan's terms may include price-based defaults (defaulting when the loan's collateralization ratio reaches the liquidation threshold) and/or payment-based defaults (defaulting when a borrower misses a specified number of repayments). |
+| **Auto-liquidation enabled** | For particular collateral types, lenders can elect to enable third-party liquidators who transfer the principal to the lender in exchange for the collateral in a default. |
+| **Liquidation threshold** | The minimum ratio of collateral to debt that must be maintained by the borrower to avoid defaulting (defined only if price-based defaults are enabled). |
+| **Max outstanding payments** | The number of outstanding interest payments allowed prior to a payment-based default (defined only if payment-based defaults are enabled). |
+| **Early payment penalty** | The interest a borrower is required to pay on early principal repayments, expressed as a percentage of the original interest expected for the repaid principal. |
+| **Late payment penalty** | The fee a borrower is required to pay on late payments, expressed as a percentage of the late repayment. |
+| **Grace period** | The amount of time after a missed payment at which it is considered late. |
+| **Principal pricing oracle** | An optionally defined custom pricing oracle to calculate principal value  |
+|**Collateral pricing oracle** | An optionally defined custom pricing oracle to calculate collateral value  |
+

@@ -16,6 +16,12 @@ Loopscale executes these steps atomically. This means that all the above actions
 
 The end result: a levered JupSOL position earning more yield as long as borrow rates are lower than the base JupSOL yield.
 
+Upon closing a Yield Loop, Loopscale does the following:
+1. Flash loans the amount needed to repay your loan
+2. Repays the long-term loan to free up your collateral
+3. Sells enough of your yield-bearing asset to repay the flash loan
+4. Returns the remaining assets to your wallet
+
 ## Yield Loops compared to similar products
 
 While leveraged yield strategies have existed in DeFi before, Loopscale's order book architecture provides several key advantages over looping from traditional yield-based protocols. 

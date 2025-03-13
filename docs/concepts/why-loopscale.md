@@ -24,7 +24,7 @@ This design creates several fundamental inefficiencies:
 4. **Limited asset support**: New assets need deep pool liquidity to launch, leaving many novel and emerging assets (like yield-bearing tokens) underserved.
 
 ## A better solution: The Credit Order Book
-Loopscale's order book model—featuring the Credit Order Book—matches individual lenders and borrowers based on flexible criteria such as asset type, amount, duration, and interest rate. This creates Atomic Markets where:
+Loopscale's order book model—the Credit Order Book—matches individual lenders and borrowers based on flexible criteria such as asset type, amount, duration, and interest rate. We call our order book-based markets **Atomic Markets**, where:
 - Lenders and borrowers define the terms
 - Each market has specific parameters and risk pricing
 - Any asset can be used as collateral, unlocking potentially trillions in novel and emerging assets

@@ -34,7 +34,11 @@ No token or airdrop plans have been announced. Users should be vigilant against 
 ## Using Loopscale
 
 ### Why do I need to spend extra SOL to open a lending position or loop?
-<!-- TODO: rent explanation -->
+Opening a lending position or a loop effectively opens a new Solana account, which requires a "rent deposit." This extra amount of SOL is for this deposit.
+
+You will receive this "rent" back when you close your position fully. For lending positions, you may need to fully delete the position (positions can remain even after fully repaid) to reclaim the rent. See: [Managing lending positions](/concepts/using-loopscale/lend/managing-position).
+
+You can read more about rent and the Solana account model in the [Solana documentation](https://solana.com/docs/core/accounts).
 
 ### How do fixed-rate loans work on Loopscale?
 Fixed-rate loans on Loopscale maintain the same interest rate through a fixed term (e.g. 1 day, 1 week, 1 month, or 3 months). Unlike variable rate options common in traditional DeFi lending pools, there is no variable rate volatility for loans on Loopscale.
