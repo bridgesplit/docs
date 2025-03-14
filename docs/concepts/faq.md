@@ -33,6 +33,10 @@ No token or airdrop plans have been announced. Users should be vigilant against 
 
 ## Using Loopscale
 
+### I'm having trouoble opening or closing a Yield Loop
+
+See the [Yield Loops](/concepts/using-loopscale/yield-loops#common-questions) article for answers to common questions and issues.
+
 ### Why do I need to spend extra SOL to open a lending position or loop?
 Opening a lending position or a loop effectively opens a new Solana account, which requires a "rent deposit." This extra amount of SOL is for this deposit.
 

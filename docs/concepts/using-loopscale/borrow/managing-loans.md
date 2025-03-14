@@ -4,49 +4,56 @@ sidebar_position: 2
 
 # Managing Loans
 
-A loan is created when a borrow order matches with a compatible lend order on the order book. 
+A loan is created when a borrow order matches with a compatible lend order. The Loopscale App provides several features to manage your loans. Users can see their ongoing loans on the Loopscale App's [Portfolio](https://app.loopscale.com/portfolio) page, under the Borrowing section.
 
-You can partially or fully repay a loan at any point. You only owe interest on loan value you have outstanding. 
+**Loan Health** indicates how far a loan is from potential liquidation. It ranges from 0% to 100%, with 0% meaning the loan is at risk of liquidation because its collateralization ratio has fallen below the required threshold. Borrowers should regularly monitor loan health, especially when collateral value fluctuates. Starting with a lower loan-to-value ratio (LTV) will give your loan a higher initial health percentage.
 
-A borrower has two ways to improve a loan's health factor: (1) topping up collateral (2) repaying a loan or portion of a loan early.
+To improve a loan's health factor, borrowers can:
+1. Add more collateral
+2. Repay part of the loan early
 
-A borrower may repay a loan in full before the loan due date. Upon repayment, the loan will end and the collateral will be returned to the borrower. A borrower may also partially repay a loan early, decreasing the loan value and increasing the health factor. Upon early repayment, interest accrued up until that point is paid.
+Borrowers may also repay a loan completely before its due date. Upon full repayment, the loan closes and all collateral returns to the borrower. Partial early repayments reduce the outstanding loan amount and increase the health factor. Any early repayment includes interest accrued up to that point.
 
-## Monitoring loan health
-A loan's health factor helps a borrower easily understand a loan's real-time risk of a price-based liquidation. The health factor has a maximum value of 100%. A health factor of 0% signals a loan is at risk of liquidation, meaning its collateralization ratio no longer meets the liquidation threshold.
+## Loan Management Actions
 
-The health factor is calculated with the following formula:
+Users can perform the following actions on their ongoing loans from the Portfolio or Borrow pages:
 
-$\text{Health Factor}  = 1 -  \displaystyle\frac{\text{Collateralization Ratio}}{\text{Liquidation Ratio}}$, where
+### Borrow More
+Increase your loan amount using existing collateral by finding your position in your portfolio, clicking More, and selecting "Borrow More." This does not add additional collateral and will decrease your loan health.
 
+### Withdraw Collateral
+Remove some collateral from your position by finding it in your portfolio, clicking More, and selecting "Withdraw Collateral." This action reduces loan health.
 
-$\text{Collateralization Ratio}  = 1 -  \displaystyle\frac{\text{Debt Value in USD}}{\text{Collateral Value in USD}}$
+### Top Up Collateral
+Add more of the same collateral asset to your loan to increase the health factor. Note that any added collateral cannot be withdrawn until the loan concludes.
 
+### Refinancing
+Borrowers can refinance their loans by repaying an outstanding loan while simultaneously starting another. This pays off the original lender and creates a new loan.
 
-and the $\text{Liquidation Ratio}$  is a per-collateral, protocol-determined value.
+Refinancing requires:
+- An available offer of equal or greater size than the amount owed
+- Matching term and collateral requirements
+- Sufficient collateral value to meet the new loan's LTV requirements
 
-${\text{Debt Value}}$ includes the total interest as calculated at the loan due date.
-The liquidation ratio is fixed for the lifetime of the loan whereas the collateralization ratio may fluctuate over the course of a loan as the value of the collateral or debt changes.
+The new loan amount will equal the original principal plus any accrued interest and fees for the new term.
 
-Platform-wide liquidation ratio values can be found at the bottom of the [Loopscale App's Borrow page](https://app.loopscale.com/borrow).
+Borrowers can opt into auto-refinancing, which uses an off-chain matching engine to find available offers automatically. There is a 15-minute grace period after loan failure during which the system attempts to find a match.
 
-## Borrow more
+## Understanding Loan Health
+The health factor helps you understand your loan's real-time risk of liquidation. It is calculated using:
 
-## Withdraw collateral
+$\text{Health Factor} = 1 - \displaystyle\frac{\text{Collateralization Ratio}}{\text{Liquidation Ratio}}$
 
-## Top up loan
-A borrower may deposit additional collateral for a loan, increasing the collateral value and increasing the health factor. The additional collateral must be of the same asset. Excess collateral may not be withdrawn until the loan conclusion with the rest of the collateral.
+Where:
+- $\text{Collateralization Ratio} = \displaystyle\frac{\text{Debt Value in USD}}{\text{Collateral Value in USD}}$
+- $\text{Liquidation Ratio}$ is a protocol-determined value specific to each collateral type
+- $\text{Debt Value}$ includes the total interest calculated at the loan due date
 
-## Refinancing
-Borrowers on Loopscale are able to refinance their loans. Refinancing is the process of repaying one outstanding loan by atomically starting another. The original lender is paid off and a new loan is started.
+The liquidation ratio remains fixed for the lifetime of the loan, while the collateralization ratio may change as collateral or debt values fluctuate.
 
-Refinancing only works if there is an offer at a greater than or equal to size of the amount owed on a loan and for the corresponding term and collateral. The new loan is started at an amount equal to the original principal plus any accrued interest and fees for the new length.
+You can find current liquidation ratio values at the bottom of the [Loopscale App's Borrow page](https://app.loopscale.com/borrow).
 
-If the amount of collateral in the existing loan is insufficient to start aa new loan (e.g. Loan Balance > (LTV * Collateral)), the refinance will fail.
+## Defaults
+If a loan defaults, it ends and the borrower loses ownership of all collateral, including excess collateral and any partial repayments. 
 
-Borrowers can opt-in to auto-refinancing which is an off-chain matching engine to find available offers automatically to renew loans instead of a payment based default. There is a 15 minute grace period post loan failure where the loan will attempt to be matched.
-
-# Defaults
-If a loan defaults, the loan ends and the borrower loses ownership of the collateral, including excess collateral and early repayments. Loans on Loopscale have two default mechanisms, price-based and payment-based.
-
-Similar to liquidations on existing DeFi lending protocols, price-based defaults occur when a loan's health factor reaches 0. In other words, a price-based default occurs when the value of loan's collateral relative to the value of the debt falls below the liquidation threshold. This can happen at any point during the loan, and borrowers should monitor their health factor to avoid a price-based default. Borrowers can increase their health factor by repaying principal and topping up collateral amounts.
+**Price-based defaults** occur when a loan's health factor reaches 0% - meaning the collateral value relative to the debt falls below the liquidation threshold. This can happen at any point during the loan term. Borrowers should monitor their health factor to avoid this type of default.

@@ -4,19 +4,18 @@ sidebar_position: 1
 
 # Lending Assets
 
-Lending is one of the core primitives of Loopscale. 
-
 Lending on Loopscale is different from pool-based lending protocols. It can be compared most to limit order book-based exchanges. On Loopscale, lending creates a limit order on the Credit Order Book of a) amount offered and b) APY requested on that amount. Borrowers then select the best APY (in what can be compared to a market order).
 
-There are two ways to lend on Loopscale:
+## How to lend on Loopscale
+There are two ways to Lend on Loopscale:
 
-1. Lend through Loopscale's Earn Vaults, where capital is deposited to vaults where lending positions are managed by a vault custodian. This is a more hands-off approach to lending; to learn more, see [Earn Vaults](/concepts/using-loopscale/earn).
+1. Lend through **Loopscale Vaults**, where capital is deposited to vaults where lending positions are managed by a vault custodian. This is a more passive approach to lending; to learn more, see [Loopscale Vaults](/concepts/using-loopscale/vaults).
 
-2. Create custom lend positions specifying rates and eligible collateral. This is a more complex—and more powerful—way to lend. **This article describes how to create these positions**.
+2. Lend through **Advanced Lending**, specifying rates and eligible collateral. This is a more complex—and more powerful—way to lend. **This article describes how to create these positions**.
 
-## How to create a lending position on Loopscale
+## How to create an Advanced Lending position on Loopscale
 
-First, navigate to the [Lend page on the Loopscale App](https://app.loopscale.com/lend).Find the asset you want to lend and click "View market" for that asset. From here, you select which asset you wish to supply (lend), collateral you accept, and the APYs you request for each fixed rate duration.
+First, navigate to the [Lend page on the Loopscale App](https://app.loopscale.com/lend). Find the asset you want to lend and click "View market" for that asset. From here, you select which asset you wish to supply (lend), collateral you accept, and the APYs you request for each fixed rate duration.
 
 ### Eligible collateral selection
 

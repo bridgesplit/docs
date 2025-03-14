@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
 # LP Collateral Management
 
-Users are able to manage their Orca Whirlpool liquidity positions directly from the Loopscale app while these positions are being used as collateral 
+Users are able to manage their Orca Whirlpool liquidity positions directly from the Loopscale app while these positions are being used as collateral. 
 
 ## How to manage LP collateral
 

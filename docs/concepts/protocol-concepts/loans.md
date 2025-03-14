@@ -6,7 +6,7 @@ import { FixedTblCol } from "@site/src/js-components/inline";
 # Loans
 
 ## Introduction
-Direct loans form the foundation of the Loopscale Protocol, enabling direct lending and borrowing between users. Lenders can create loan offers and borrowers can create loan requests  with specific parameters such as interest rate, duration, and collateral requirements. When a matching counterparty accepts the offer or request, a bilateral loan is initialized, and funds are transferred between the parties. The collateral remains non-transferrable until the loan concludes, at which point it is returned to the borrower upon repayment or transferred to the lender in the event of a default.
+Loans form the foundation of Loopscale, enabling direct lending and borrowing between users. Lenders can create loan offers and borrowers can create loan requests  with specific parameters such as interest rate, duration, and collateral requirements. When a matching counterparty accepts the offer or request, a bilateral loan is initialized, and funds are transferred between the parties. The collateral remains non-transferrable until the loan concludes, at which point it is returned to the borrower upon repayment or transferred to the lender in the event of a default.
 
 A loan is created when a Lend Order matches with a compatible Borrow Order on the [Credit Order Book](/concepts/protocol-concepts/credit-order-book). 
 
@@ -22,9 +22,6 @@ Loans are initiated when a loan offer and loan request, collectively known as or
 
 When a suitable offer and request are matched, or when a borrower or lender finds an acceptable order, the borrower can initiate the loan. The protocol automatically transfers the principal to the borrower and escrows the collateral.
 
-## Terms
-Below are all possible terms for a Loan via the Loopscale protocol. Note that not all of these terms are currently in use with the Loopscale App; but they do all exist within the protocol for current and future use cases.
-
 ## Ledgers
 Initiating a loan automatically generates a repayment ledger based on the terms specified in the matched order. The ledger defines the repayment schedule and tracks repayments as they are made. The Loopscale Protocol uses this ledger to determine the current state of a loan.
 
@@ -33,6 +30,10 @@ Initiating a loan automatically generates a repayment ledger based on the terms 
 
 ### Oracle Agnostic Pricing
 Borrowers can set up loans that price their collateral or principal using custom or arbitrary oracles, enabling pricing for assets that may be illiquid or lack third-party oracle support. Loans may also be oracle-less, with borrowers proposing terms that solely default based on missed payments or loan expiry.
+
+## Terms
+Below are all possible terms for a Loan via the Loopscale protocol. Note that not all of these terms are currently in use with the Loopscale App; but they do all exist within the protocol for current and future use cases.
+
 
 | <FixedTblCol text="Term"/> | Description  |
 |:---|:---|
