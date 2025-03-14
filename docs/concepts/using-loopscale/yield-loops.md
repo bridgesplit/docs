@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Yield Loops
 
-Yield Loops are a structured product offering access to leveraged yield strategies. They enable users to multiply returns from yield-bearing assets.
+Yield Loops are a structured product offering access to leveraged yield strategies. They enable users to multiply returns from yield-bearing assets like JLP, native and liquid-staked Solana, and more. Yield Loops can either be market-neutral or short/long biased.
 
 A Yield Loop uses deposited tokens as collateral to borrow more of the same yield-bearing asset. This creates a loop where both the initial deposit and the borrowed tokens earn yield, amplifying returns.
 
